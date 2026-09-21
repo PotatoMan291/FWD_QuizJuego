@@ -1,0 +1,207 @@
+{
+  "name": "Game Trivia - Resultado de partida",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "videojuego-trivia",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook-trivia",
+      "name": "Webhook - Resultado",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        300
+      ],
+      "webhookId": "videojuego-trivia"
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $json.body ?? $json;\n\nconst requiredFields = [\n  'player',\n  'score',\n  'correctAnswers',\n  'totalQuestions',\n  'level'\n];\n\nconst missingFields = requiredFields.filter(\n  (field) => data[field] === undefined || data[field] === null || data[field] === ''\n);\n\nif (missingFields.length > 0) {\n  throw new Error(`Faltan datos requeridos: ${missingFields.join(', ')}`);\n}\n\nreturn [\n  {\n    json: {\n      player: String(data.player),\n      score: Number(data.score),\n      correctAnswers: Number(data.correctAnswers),\n      totalQuestions: Number(data.totalQuestions),\n      level: String(data.level),\n      scoreId: data.scoreId ?? null,\n      receivedAt: new Date().toISOString()\n    }\n  }\n];"
+      },
+      "id": "validate-data",
+      "name": "Validar datos",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $json;\n\nconst percentage = data.totalQuestions > 0\n  ? Math.round((data.correctAnswers / data.totalQuestions) * 100)\n  : 0;\n\nlet performance = 'Necesita mejorar';\n\nif (percentage >= 90) {\n  performance = 'Excelente';\n} else if (percentage >= 70) {\n  performance = 'Buen resultado';\n} else if (percentage >= 50) {\n  performance = 'Resultado aceptable';\n}\n\nreturn [\n  {\n    json: {\n      ...data,\n      percentage,\n      performance\n    }\n  }\n];"
+      },
+      "id": "calculate-stats",
+      "name": "Calcular estadísticas",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "percentage-condition",
+              "leftValue": "={{ $json.percentage }}",
+              "rightValue": 70,
+              "operator": {
+                "type": "number",
+                "operation": "gte"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "check-performance",
+      "name": "¿Buen resultado?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        720,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $json;\n\nreturn [\n  {\n    json: {\n      success: true,\n      player: data.player,\n      score: data.score,\n      correctAnswers: data.correctAnswers,\n      totalQuestions: data.totalQuestions,\n      percentage: data.percentage,\n      level: data.level,\n      performance: data.performance,\n      message: `¡Excelente trabajo, ${data.player}! Has obtenido un resultado destacado.`\n    }\n  }\n];"
+      },
+      "id": "good-result",
+      "name": "Preparar respuesta positiva",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        960,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $json;\n\nreturn [\n  {\n    json: {\n      success: true,\n      player: data.player,\n      score: data.score,\n      correctAnswers: data.correctAnswers,\n      totalQuestions: data.totalQuestions,\n      percentage: data.percentage,\n      level: data.level,\n      performance: data.performance,\n      message: `Partida registrada para ${data.player}. Puedes seguir practicando para mejorar tu puntuación.`\n    }\n  }\n];"
+      },
+      "id": "normal-result",
+      "name": "Preparar respuesta normal",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        960,
+        420
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "respond-webhook",
+      "name": "Responder al frontend",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        1220,
+        300
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook - Resultado": {
+      "main": [
+        [
+          {
+            "node": "Validar datos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validar datos": {
+      "main": [
+        [
+          {
+            "node": "Calcular estadísticas",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Calcular estadísticas": {
+      "main": [
+        [
+          {
+            "node": "¿Buen resultado?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "¿Buen resultado?": {
+      "main": [
+        [
+          {
+            "node": "Preparar respuesta positiva",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Preparar respuesta normal",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Preparar respuesta positiva": {
+      "main": [
+        [
+          {
+            "node": "Responder al frontend",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Preparar respuesta normal": {
+      "main": [
+        [
+          {
+            "node": "Responder al frontend",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "versionId": "game-trivia-v1",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "tags": []
+}

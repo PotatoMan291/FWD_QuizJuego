@@ -1,14 +1,7 @@
-import { BrowserRouter } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import AppRoutes from "./routes/AppRoutes";
+import Routing from "./routes/Routing";
 
 function App() {
-  return (
-    <BrowserRouter>
-      <Navbar />
-      <AppRoutes />
-    </BrowserRouter>
-  );
+    return <Routing />;
 }
 
 export default App;

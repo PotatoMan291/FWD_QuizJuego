@@ -1,89 +1,86 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import GameCard from "../components/GameCard";
+import DifficultySelector from "../components/DifficultySelector";
 
 function Home() {
-  const [player, setPlayer] = useState("");
-  const navigate = useNavigate();
+    const navigate = useNavigate();
 
-  const handleStart = (level) => {
-    const cleanName = player.trim();
+    const [playerName, setPlayerName] = useState("");
+    const [difficulty, setDifficulty] = useState("easy");
+    const [error, setError] = useState("");
 
-    if (!cleanName) {
-      alert("Debes escribir tu nombre antes de comenzar.");
-      return;
-    }
+    const startGame = () => {
+        const cleanName = playerName.trim();
 
-    sessionStorage.setItem("triviaPlayer", cleanName);
-    navigate(`/game/${level}`);
-  };
+        if (!cleanName) {
+            setError("Ingresa tu nombre antes de comenzar.");
+            return;
+        }
 
-  return (
-    <main className="home-page">
-      <section className="hero">
-        <span className="eyebrow">QUIZ #5 · VIDEOJUEGO</span>
+        setError("");
 
-        <h1>Game Trivia</h1>
+        const gameData = {
+            player: cleanName,
+            difficulty
+        };
 
-        <p>
-          Pon a prueba tus conocimientos sobre videojuegos, consigue puntos
-          y alcanza un lugar en la tabla de puntuaciones.
-        </p>
+        sessionStorage.setItem(
+            "currentGame",
+            JSON.stringify(gameData)
+        );
 
-        <div className="player-form">
-          <label htmlFor="player">Nombre del jugador</label>
+        navigate(`/juego/${difficulty}`, {
+            state: gameData
+        });
+    };
 
-          <input
-            id="player"
-            type="text"
-            value={player}
-            onChange={(event) => setPlayer(event.target.value)}
-            placeholder="Escribe tu nombre"
-            maxLength={30}
-          />
-        </div>
-      </section>
+    return (
+        <main className="home">
+            <div className="home-card">
+                <h1>Video Game Trivia</h1>
 
-      <section className="levels-section">
-        <div className="section-heading">
-          <span>SELECCIONA UNA DIFICULTAD</span>
-          <h2>Elige tu desafío</h2>
-        </div>
+                <p>
+                    Pon a prueba tus conocimientos sobre videojuegos.
+                </p>
 
-        <div className="game-grid">
-          <GameCard
-            level="easy"
-            title="Novato"
-            description="Preguntas generales para comenzar la partida."
-            questions={5}
-          />
+                <label htmlFor="playerName">
+                    Nombre del jugador
+                </label>
 
-          <GameCard
-            level="medium"
-            title="Veterano"
-            description="Preguntas para jugadores con experiencia."
-            questions={10}
-          />
+                <input
+                    id="playerName"
+                    type="text"
+                    value={playerName}
+                    onChange={(event) =>
+                        setPlayerName(event.target.value)
+                    }
+                    placeholder="Escribe tu nombre"
+                    maxLength={30}
+                />
 
-          <GameCard
-            level="hard"
-            title="Experto"
-            description="Preguntas difíciles para verdaderos conocedores."
-            questions={10}
-          />
-        </div>
+                <h2>Selecciona la dificultad</h2>
 
-        <div className="level-button-container">
-          <button
-            className="primary-button"
-            onClick={() => handleStart("easy")}
-          >
-            Comenzar partida
-          </button>
-        </div>
-      </section>
-    </main>
-  );
+                <DifficultySelector
+                    value={difficulty}
+                    onChange={setDifficulty}
+                />
+
+                {error && (
+                    <p className="error-message">
+                        {error}
+                    </p>
+                )}
+
+                <button
+                    type="button"
+                    className="start-button"
+                    onClick={startGame}
+                >
+                    Comenzar partida
+                </button>
+            </div>
+        </main>
+    );
 }
 
 export default Home;

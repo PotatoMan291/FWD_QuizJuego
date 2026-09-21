@@ -1,16 +1,87 @@
-# React + Vite
+# Video Game Trivia
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web de trivia de videojuegos desarrollada con React y Vite. El jugador introduce su nombre, selecciona una dificultad y responde una serie de preguntas obtenidas mediante una API local con JSON Server.
 
-Currently, two official plugins are available:
+La dificultad modifica la cantidad de preguntas, el tiempo disponible por pregunta y los puntos obtenidos por cada respuesta correcta.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Dificultades
 
-## React Compiler
+| Dificultad | Preguntas | Tiempo por pregunta | Puntos por acierto |
+|---|---:|---:|---:|
+| Fácil | 10 | 20 segundos | 100 |
+| Media | 12 | 15 segundos | 150 |
+| Difícil | 15 | 10 segundos | 200 |
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologías
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- React Router
+- JSON Server
+- n8n
+- JavaScript
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Estructura principal
+
+```text
+src/
+├── components/
+│   ├── DifficultySelector.jsx
+│   ├── QuestionCard.jsx
+│   └── Timer.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Game.jsx
+│   ├── Results.jsx
+│   └── ScoreBoard.jsx
+├── routes/
+│   └── Routing.jsx
+├── services/
+│   └── gameService.js
+├── App.jsx
+└── main.jsx
+```
+
+## Instalación y ejecución
+
+```bash
+npm install
+```
+
+Iniciar JSON Server:
+
+```bash
+npm run server
+```
+
+Iniciar React:
+
+```bash
+npm run dev
+```
+
+JSON Server debe quedar disponible en `http://localhost:3001`.
+
+## API local
+
+Las preguntas se obtienen mediante:
+
+```text
+GET http://localhost:3001/questions
+```
+
+Los resultados se guardan mediante:
+
+```text
+POST http://localhost:3001/scores
+```
+
+## Integración con n8n
+
+Al finalizar una partida, React envía el resultado al webhook de n8n:
+
+```text
+POST http://localhost:5678/webhook/videojuego-trivia
+```
+
+El workflow valida los datos, calcula el porcentaje, determina el rendimiento y devuelve una respuesta JSON.

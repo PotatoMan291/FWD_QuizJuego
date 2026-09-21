@@ -1,290 +1,602 @@
-import { useEffect, useMemo, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import {
+    useCallback,
+    useEffect,
+    useMemo,
+    useState
+} from "react";
+
+import {
+    useLocation,
+    useNavigate,
+    useParams
+} from "react-router-dom";
+
 import QuestionCard from "../components/QuestionCard";
-import ScoreBoard from "../components/ScoreBoard";
-import Loading from "../components/Loading";
-import ErrorMessage from "../components/ErrorMessage";
+import Timer from "../components/Timer";
 
-const API_URL = "http://localhost:3001";
-const N8N_WEBHOOK_URL = "http://localhost:5678/webhook/videojuego-trivia";
+import {
+    getQuestions,
+    saveScore,
+    sendResultToN8n
+} from "../services/gameService";
 
-const QUESTIONS_BY_LEVEL = {
-  easy: 5,
-  medium: 10,
-  hard: 10
+const DIFFICULTY_CONFIG = {
+    easy: {
+        name: "Fácil",
+        questionCount: 10,
+        secondsPerQuestion: 20,
+        pointsPerCorrect: 100
+    },
+
+    medium: {
+        name: "Media",
+        questionCount: 12,
+        secondsPerQuestion: 15,
+        pointsPerCorrect: 150
+    },
+
+    hard: {
+        name: "Difícil",
+        questionCount: 15,
+        secondsPerQuestion: 10,
+        pointsPerCorrect: 200
+    }
 };
 
+function shuffle(array) {
+    return [...array].sort(
+        () => Math.random() - 0.5
+    );
+}
+
 function Game() {
-  const { level } = useParams();
-  const navigate = useNavigate();
+    const { difficulty } = useParams();
 
-  const [player, setPlayer] = useState("");
-  const [questions, setQuestions] = useState([]);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [score, setScore] = useState(0);
-  const [lives, setLives] = useState(3);
-  const [selectedAnswer, setSelectedAnswer] = useState("");
-  const [answerResult, setAnswerResult] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
-  const [gameFinished, setGameFinished] = useState(false);
-  const [sendingResult, setSendingResult] = useState(false);
+    const location = useLocation();
+    const navigate = useNavigate();
 
-  const totalQuestions = questions.length;
+    const config = useMemo(
+        () =>
+            DIFFICULTY_CONFIG[difficulty] ||
+            DIFFICULTY_CONFIG.easy,
+        [difficulty]
+    );
 
-  const correctAnswers = useMemo(() => {
-    return Math.floor(score / 100);
-  }, [score]);
+    const [player, setPlayer] = useState(
+        location.state?.player || ""
+    );
 
-  const percentage = useMemo(() => {
-    if (totalQuestions === 0) {
-      return 0;
-    }
+    const [questions, setQuestions] = useState([]);
 
-    return Math.round((correctAnswers / totalQuestions) * 100);
-  }, [correctAnswers, totalQuestions]);
+    const [currentIndex, setCurrentIndex] =
+        useState(0);
 
-  useEffect(() => {
-    const savedPlayer = sessionStorage.getItem("triviaPlayer");
+    const [selectedAnswer, setSelectedAnswer] =
+        useState("");
 
-    if (!savedPlayer) {
-      navigate("/");
-      return;
-    }
+    const [answerResult, setAnswerResult] =
+        useState(null);
 
-    setPlayer(savedPlayer);
-  }, [navigate]);
+    const [correctAnswers, setCorrectAnswers] =
+        useState(0);
 
-  useEffect(() => {
-    const fetchQuestions = async () => {
-      try {
-        setLoading(true);
-        setError("");
+    const [timeLeft, setTimeLeft] = useState(
+        config.secondsPerQuestion
+    );
 
-        const response = await fetch(
-          `${API_URL}/questions?difficulty=${level}`
-        );
+    const [loading, setLoading] =
+        useState(true);
 
-        if (!response.ok) {
-          throw new Error("No se pudieron obtener las preguntas.");
+    const [error, setError] =
+        useState("");
+
+    const [finishing, setFinishing] =
+        useState(false);
+
+    /*
+     * Obtener jugador actual
+     */
+    useEffect(() => {
+        if (location.state?.player) {
+            setPlayer(location.state.player);
+            return;
         }
 
-        const data = await response.json();
+        const savedGame =
+            sessionStorage.getItem("currentGame");
 
-        const numberOfQuestions = QUESTIONS_BY_LEVEL[level] || 5;
+        if (savedGame) {
+            const parsedGame =
+                JSON.parse(savedGame);
 
-        const shuffledQuestions = [...data]
-          .sort(() => Math.random() - 0.5)
-          .slice(0, numberOfQuestions);
+            if (
+                parsedGame.difficulty ===
+                difficulty
+            ) {
+                setPlayer(parsedGame.player);
+                return;
+            }
+        }
 
-        setQuestions(shuffledQuestions);
-      } catch (err) {
-        setError(
-          "No se pudieron cargar las preguntas. Verifica que json-server esté ejecutándose."
+        navigate("/");
+    }, [
+        location.state,
+        difficulty,
+        navigate
+    ]);
+
+    /*
+     * Obtener preguntas
+     */
+    useEffect(() => {
+        const loadQuestions = async () => {
+            try {
+                setLoading(true);
+                setError("");
+
+                const data =
+                    await getQuestions();
+
+                const filtered =
+                    data.filter(
+                        (question) =>
+                            question.difficulty ===
+                            difficulty
+                    );
+
+                if (
+                    filtered.length <
+                    config.questionCount
+                ) {
+                    throw new Error(
+                        `No hay suficientes preguntas de dificultad ${config.name}.`
+                    );
+                }
+
+                const selectedQuestions =
+                    shuffle(filtered).slice(
+                        0,
+                        config.questionCount
+                    );
+
+                setQuestions(
+                    selectedQuestions
+                );
+            } catch (loadError) {
+                setError(
+                    loadError.message
+                );
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        loadQuestions();
+    }, [
+        difficulty,
+        config
+    ]);
+
+    /*
+     * Reiniciar temporizador
+     * cuando cambia la pregunta.
+     */
+    useEffect(() => {
+        setTimeLeft(
+            config.secondsPerQuestion
         );
-      } finally {
-        setLoading(false);
-      }
-    };
+    }, [
+        currentIndex,
+        config.secondsPerQuestion
+    ]);
 
-    fetchQuestions();
-  }, [level]);
+    /*
+     * Temporizador
+     */
+    useEffect(() => {
+        if (
+            loading ||
+            finishing ||
+            !questions.length ||
+            selectedAnswer
+        ) {
+            return;
+        }
 
-  useEffect(() => {
-    if (lives <= 0 && questions.length > 0) {
-      setGameFinished(true);
-    }
-  }, [lives, questions.length]);
+        if (timeLeft <= 0) {
+            return;
+        }
 
-  const handleAnswer = (answer) => {
-    if (selectedAnswer || gameFinished) {
-      return;
-    }
+        const timer =
+            setTimeout(() => {
+                setTimeLeft(
+                    (previous) =>
+                        previous - 1
+                );
+            }, 1000);
 
-    const question = questions[currentQuestion];
+        return () =>
+            clearTimeout(timer);
 
-    setSelectedAnswer(answer);
+    }, [
+        timeLeft,
+        loading,
+        finishing,
+        questions.length,
+        selectedAnswer
+    ]);
 
-    if (answer === question.correctAnswer) {
-      setScore((previousScore) => previousScore + 100);
-      setAnswerResult("correct");
-    } else {
-      setLives((previousLives) => previousLives - 1);
-      setAnswerResult("incorrect");
-    }
+    /*
+     * Finalizar partida
+     */
+    const finishGame = useCallback(
+        async (
+            finalCorrectAnswers
+        ) => {
+            if (finishing) {
+                return;
+            }
 
-    setTimeout(() => {
-      const isLastQuestion = currentQuestion === questions.length - 1;
+            setFinishing(true);
 
-      if (isLastQuestion) {
-        setGameFinished(true);
-        return;
-      }
+            const totalQuestions =
+                questions.length;
 
-      setCurrentQuestion((previousQuestion) => previousQuestion + 1);
-      setSelectedAnswer("");
-      setAnswerResult("");
-    }, 900);
-  };
+            const percentage =
+                totalQuestions > 0
+                    ? Math.round(
+                        (
+                            finalCorrectAnswers /
+                            totalQuestions
+                        ) * 100
+                    )
+                    : 0;
 
-  const saveScore = async () => {
-    setSendingResult(true);
-    setError("");
+            const score =
+                finalCorrectAnswers *
+                config.pointsPerCorrect;
 
-    const finalScore = {
-      player,
-      score,
-      correctAnswers,
-      totalQuestions,
-      percentage,
-      level,
-      date: new Date().toISOString()
-    };
+            const result = {
+                player,
+                score,
+                correctAnswers:
+                    finalCorrectAnswers,
+                totalQuestions,
+                percentage,
+                difficulty,
+                level: difficulty,
+                date:
+                    new Date().toISOString()
+            };
 
-    try {
-      const scoreResponse = await fetch(`${API_URL}/scores`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
+            try {
+                /*
+                 * Guardar en JSON Server
+                 */
+                await saveScore(result);
+
+                /*
+                 * Enviar a n8n
+                 */
+                try {
+                    await sendResultToN8n(
+                        result
+                    );
+                } catch (n8nError) {
+                    console.warn(
+                        "La puntuación se guardó, pero n8n no respondió:",
+                        n8nError
+                    );
+                }
+
+                /*
+                 * Guardar último resultado
+                 */
+                sessionStorage.setItem(
+                    "lastResult",
+                    JSON.stringify(result)
+                );
+
+                /*
+                 * Eliminar partida actual
+                 */
+                sessionStorage.removeItem(
+                    "currentGame"
+                );
+
+                /*
+                 * Ir a resultados
+                 */
+                navigate(
+                    "/resultados",
+                    {
+                        state: result,
+                        replace: true
+                    }
+                );
+
+            } catch (saveError) {
+                setError(
+                    saveError.message
+                );
+
+                setFinishing(false);
+            }
         },
-        body: JSON.stringify(finalScore)
-      });
+        [
+            finishing,
+            questions.length,
+            config.pointsPerCorrect,
+            player,
+            difficulty,
+            navigate
+        ]
+    );
 
-      if (!scoreResponse.ok) {
-        throw new Error("No se pudo guardar el puntaje.");
-      }
+    /*
+     * Cuando se acaba el tiempo
+     */
+    const handleTimeUp =
+        useCallback(() => {
+            if (finishing) {
+                return;
+            }
 
-      const savedScore = await scoreResponse.json();
+            const isLastQuestion =
+                currentIndex ===
+                questions.length - 1;
 
-      try {
-        const n8nResponse = await fetch(N8N_WEBHOOK_URL, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify({
-            ...finalScore,
-            scoreId: savedScore.id
-          })
-        });
+            /*
+             * Si se acabó el tiempo
+             * y era la última pregunta,
+             * terminamos la partida.
+             */
+            if (isLastQuestion) {
+                finishGame(
+                    correctAnswers
+                );
 
-        if (n8nResponse.ok) {
-          const n8nData = await n8nResponse.json();
+                return;
+            }
 
-          sessionStorage.setItem(
-            "triviaN8nResponse",
-            JSON.stringify(n8nData)
-          );
+            /*
+             * Pasar a siguiente pregunta.
+             *
+             * Como no respondió,
+             * no se suma ningún punto.
+             */
+            setCurrentIndex(
+                (previous) =>
+                    previous + 1
+            );
+
+            setSelectedAnswer("");
+            setAnswerResult(null);
+
+        }, [
+            finishing,
+            currentIndex,
+            questions.length,
+            finishGame,
+            correctAnswers
+        ]);
+
+    /*
+     * Cuando el jugador selecciona una respuesta
+     */
+    const handleAnswer = (
+        answer
+    ) => {
+        /*
+         * Evitar seleccionar
+         * dos respuestas.
+         */
+        if (
+            selectedAnswer ||
+            finishing
+        ) {
+            return;
         }
-      } catch (n8nError) {
-        console.warn("No se pudo contactar con n8n:", n8nError);
-      }
 
-      navigate(`/results/${savedScore.id}`);
-    } catch (err) {
-      setError(
-        "No se pudo guardar el resultado. Verifica que json-server esté funcionando."
-      );
-    } finally {
-      setSendingResult(false);
+        const currentQuestion =
+            questions[currentIndex];
+
+        /*
+         * Comprobar respuesta
+         */
+        const isCorrect =
+            answer ===
+            currentQuestion.answer;
+
+        /*
+         * Mostrar inmediatamente
+         * la respuesta seleccionada.
+         */
+        setSelectedAnswer(answer);
+
+        /*
+         * Guardar si fue correcta
+         * o incorrecta.
+         */
+        setAnswerResult(
+            isCorrect
+        );
+
+        /*
+         * Calcular correctamente
+         * las respuestas acertadas.
+         */
+        const newCorrectAnswers =
+            isCorrect
+                ? correctAnswers + 1
+                : correctAnswers;
+
+        if (isCorrect) {
+            setCorrectAnswers(
+                newCorrectAnswers
+            );
+        }
+
+        /*
+         * Esperar para que el jugador
+         * pueda ver el resultado.
+         */
+        setTimeout(() => {
+            const isLastQuestion =
+                currentIndex ===
+                questions.length - 1;
+
+            /*
+             * Si es la última pregunta,
+             * terminar partida.
+             */
+            if (isLastQuestion) {
+                finishGame(
+                    newCorrectAnswers
+                );
+
+                return;
+            }
+
+            /*
+             * Pasar a siguiente pregunta.
+             */
+            setCurrentIndex(
+                (previous) =>
+                    previous + 1
+            );
+
+            setSelectedAnswer("");
+            setAnswerResult(null);
+
+        }, 1200);
+    };
+
+    /*
+     * Pantalla de carga
+     */
+    if (loading) {
+        return (
+            <p>
+                Cargando preguntas...
+            </p>
+        );
     }
-  };
 
-  if (loading) {
-    return <Loading message="Preparando la partida..." />;
-  }
+    /*
+     * Error
+     */
+    if (error) {
+        return (
+            <div>
+                <p>{error}</p>
 
-  if (error && questions.length === 0) {
-    return <ErrorMessage message={error} />;
-  }
+                <button
+                    onClick={() =>
+                        navigate("/")
+                    }
+                >
+                    Volver al inicio
+                </button>
+            </div>
+        );
+    }
 
-  if (questions.length === 0) {
+    /*
+     * Sin preguntas
+     */
+    if (!questions.length) {
+        return (
+            <p>
+                No hay preguntas disponibles.
+            </p>
+        );
+    }
+
+    const currentQuestion =
+        questions[currentIndex];
+
     return (
-      <ErrorMessage message="No existen preguntas para esta dificultad." />
+        <main className="game">
+            <header className="game-header">
+
+                <div>
+                    <span>
+                        Jugador
+                    </span>
+
+                    <strong>
+                        {player}
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        Dificultad
+                    </span>
+
+                    <strong>
+                        {config.name}
+                    </strong>
+                </div>
+
+                <div>
+                    <span>
+                        Pregunta
+                    </span>
+
+                    <strong>
+                        {currentIndex + 1}
+                        /
+                        {questions.length}
+                    </strong>
+                </div>
+
+                <Timer
+                    timeLeft={timeLeft}
+                    onTimeUp={handleTimeUp}
+                />
+
+            </header>
+
+            <QuestionCard
+                question={
+                    currentQuestion
+                }
+                selectedAnswer={
+                    selectedAnswer
+                }
+                answerResult={
+                    answerResult
+                }
+                onSelectAnswer={
+                    handleAnswer
+                }
+                disabled={
+                    Boolean(
+                        selectedAnswer
+                    ) || finishing
+                }
+            />
+
+            <div className="game-progress">
+
+                <div
+                    className="game-progress-bar"
+                    style={{
+                        width:
+                            `${
+                                (
+                                    (currentIndex + 1) /
+                                    questions.length
+                                ) * 100
+                            }%`
+                    }}
+                />
+
+            </div>
+        </main>
     );
-  }
-
-  if (gameFinished) {
-    return (
-      <main className="results-page">
-        <section className="result-card">
-          <span className="eyebrow">PARTIDA TERMINADA</span>
-
-          <h1>Buen trabajo, {player}</h1>
-
-          <div className="final-score">
-            <span>Puntaje</span>
-            <strong>{score}</strong>
-          </div>
-
-          <div className="result-stats">
-            <div>
-              <span>Correctas</span>
-              <strong>
-                {correctAnswers}/{totalQuestions}
-              </strong>
-            </div>
-
-            <div>
-              <span>Porcentaje</span>
-              <strong>{percentage}%</strong>
-            </div>
-
-            <div>
-              <span>Dificultad</span>
-              <strong>{level}</strong>
-            </div>
-          </div>
-
-          {error && <p className="inline-error">{error}</p>}
-
-          <button
-            className="primary-button"
-            onClick={saveScore}
-            disabled={sendingResult}
-          >
-            {sendingResult ? "Guardando resultado..." : "Guardar resultado"}
-          </button>
-
-          <button
-            className="secondary-button"
-            onClick={() => navigate("/")}
-          >
-            Volver al inicio
-          </button>
-        </section>
-      </main>
-    );
-  }
-
-  const question = questions[currentQuestion];
-
-  return (
-    <main className="game-page">
-      <ScoreBoard
-        player={player}
-        score={score}
-        lives={lives}
-        currentQuestion={currentQuestion + 1}
-        totalQuestions={totalQuestions}
-      />
-
-      <section className="game-container">
-        <QuestionCard
-          question={question}
-          selectedAnswer={selectedAnswer}
-          answerResult={answerResult}
-          onAnswer={handleAnswer}
-          disabled={Boolean(selectedAnswer)}
-        />
-
-        <div className="game-hint">
-          Selecciona una respuesta. Las respuestas correctas otorgan 100
-          puntos y las incorrectas quitan una vida.
-        </div>
-      </section>
-    </main>
-  );
 }
 
 export default Game;

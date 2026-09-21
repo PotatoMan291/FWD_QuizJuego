@@ -2,275 +2,3310 @@
   "questions": [
     {
       "id": "1",
-      "question": "¿Cuál de estos juegos fue desarrollado por FromSoftware?",
-      "category": "RPG",
-      "difficulty": "easy",
+      "question": "¿Cuál es el nombre del hermano de Mario?",
       "options": [
-        "Bloodborne",
-        "Resident Evil 4",
-        "Silent Hill 2",
-        "Dead Space"
+        "Luigi",
+        "Wario",
+        "Toad",
+        "Yoshi"
       ],
-      "correctAnswer": "Bloodborne"
+      "answer": "Luigi",
+      "difficulty": "easy",
+      "category": "Nintendo"
     },
     {
       "id": "2",
-      "question": "¿Cuál es el nombre del protagonista de Death Stranding?",
-      "category": "Acción",
-      "difficulty": "easy",
+      "question": "¿Qué personaje es la mascota principal de Nintendo?",
       "options": [
-        "Sam Porter Bridges",
-        "Leon S. Kennedy",
-        "Isaac Clarke",
-        "James Sunderland"
+        "Mario",
+        "Kirby",
+        "Fox McCloud",
+        "Captain Falcon"
       ],
-      "correctAnswer": "Sam Porter Bridges"
+      "answer": "Mario",
+      "difficulty": "easy",
+      "category": "Nintendo"
     },
     {
       "id": "3",
-      "question": "¿Qué compañía desarrolló Resident Evil?",
-      "category": "Survival Horror",
-      "difficulty": "easy",
+      "question": "¿Cómo se llama el héroe de The Legend of Zelda?",
       "options": [
-        "Capcom",
-        "Konami",
-        "FromSoftware",
-        "Valve"
+        "Link",
+        "Zelda",
+        "Ganon",
+        "Epona"
       ],
-      "correctAnswer": "Capcom"
+      "answer": "Link",
+      "difficulty": "easy",
+      "category": "Nintendo"
     },
     {
       "id": "4",
-      "question": "¿Cuál de estos juegos pertenece a la saga Silent Hill?",
-      "category": "Survival Horror",
-      "difficulty": "easy",
+      "question": "¿Qué criatura pertenece a la serie Pokémon?",
       "options": [
-        "Silent Hill 2",
-        "The Evil Within",
-        "Outlast",
-        "Amnesia"
+        "Pikachu",
+        "Slime",
+        "Chocobo",
+        "Creeper"
       ],
-      "correctAnswer": "Silent Hill 2"
+      "answer": "Pikachu",
+      "difficulty": "easy",
+      "category": "Nintendo"
     },
     {
       "id": "5",
-      "question": "¿Quién es el protagonista principal de Resident Evil 4?",
-      "category": "Survival Horror",
+      "question": "¿De qué color es normalmente la gorra de Mario?",
+      "options": [
+        "Roja",
+        "Verde",
+        "Azul",
+        "Morada"
+      ],
+      "answer": "Roja",
+      "difficulty": "easy",
+      "category": "Nintendo"
+    },
+    {
+      "id": "6",
+      "question": "¿Cuál es el nombre de la princesa de Super Mario?",
+      "options": [
+        "Peach",
+        "Zelda",
+        "Daisy",
+        "Rosalina"
+      ],
+      "answer": "Peach",
+      "difficulty": "easy",
+      "category": "Nintendo"
+    },
+    {
+      "id": "7",
+      "question": "¿Qué personaje puede usar una habilidad llamada Inhale?",
+      "options": [
+        "Kirby",
+        "Samus",
+        "Donkey Kong",
+        "Ness"
+      ],
+      "answer": "Kirby",
+      "difficulty": "easy",
+      "category": "Nintendo"
+    },
+    {
+      "id": "8",
+      "question": "¿Qué objeto suele hacer crecer a Mario?",
+      "options": [
+        "Super Mushroom",
+        "Master Ball",
+        "Triforce",
+        "Chaos Emerald"
+      ],
+      "answer": "Super Mushroom",
+      "difficulty": "easy",
+      "category": "Nintendo"
+    },
+    {
+      "id": "9",
+      "question": "¿Qué consola portátil popularizó la serie Pokémon?",
+      "options": [
+        "Game Boy",
+        "Dreamcast",
+        "Saturn",
+        "Neo Geo"
+      ],
+      "answer": "Game Boy",
+      "difficulty": "easy",
+      "category": "Nintendo"
+    },
+    {
+      "id": "10",
+      "question": "¿Qué animal es Donkey Kong?",
+      "options": [
+        "Gorila",
+        "Zorro",
+        "Tigre",
+        "Lobo"
+      ],
+      "answer": "Gorila",
+      "difficulty": "easy",
+      "category": "Nintendo"
+    },
+    {
+      "id": "11",
+      "question": "¿Qué princesa es protagonista de Metroid?",
+      "options": [
+        "Samus Aran",
+        "Peach",
+        "Zelda",
+        "Daisy"
+      ],
+      "answer": "Samus Aran",
+      "difficulty": "easy",
+      "category": "Nintendo"
+    },
+    {
+      "id": "12",
+      "question": "¿Qué objeto es un símbolo de The Legend of Zelda?",
+      "options": [
+        "Trifuerza",
+        "Estrella de poder",
+        "Anillo único",
+        "Buster Sword"
+      ],
+      "answer": "Trifuerza",
+      "difficulty": "easy",
+      "category": "Nintendo"
+    },
+    {
+      "id": "13",
+      "question": "¿Qué personaje usa una gorra verde y aparece en Super Mario?",
+      "options": [
+        "Luigi",
+        "Waluigi",
+        "Yoshi",
+        "Toad"
+      ],
+      "answer": "Luigi",
+      "difficulty": "easy",
+      "category": "Nintendo"
+    },
+    {
+      "id": "14",
+      "question": "¿Qué serie incluye a los personajes Ness y Lucas?",
+      "options": [
+        "EarthBound",
+        "Metroid",
+        "F-Zero",
+        "Pikmin"
+      ],
+      "answer": "EarthBound",
+      "difficulty": "easy",
+      "category": "Nintendo"
+    },
+    {
+      "id": "15",
+      "question": "¿Qué juego incluye carreras con Mario y otros personajes?",
+      "options": [
+        "Mario Kart",
+        "F-Zero",
+        "Wave Race",
+        "1080 Snowboarding"
+      ],
+      "answer": "Mario Kart",
+      "difficulty": "easy",
+      "category": "Nintendo"
+    },
+    {
+      "id": "16",
+      "question": "¿Qué consola fue la primera PlayStation?",
+      "options": [
+        "PlayStation",
+        "PlayStation 2",
+        "PlayStation 3",
+        "PSP"
+      ],
+      "answer": "PlayStation",
+      "difficulty": "easy",
+      "category": "PlayStation"
+    },
+    {
+      "id": "17",
+      "question": "¿Qué personaje protagoniza God of War?",
+      "options": [
+        "Kratos",
+        "Dante",
+        "Ryu",
+        "Sonic"
+      ],
+      "answer": "Kratos",
+      "difficulty": "easy",
+      "category": "PlayStation"
+    },
+    {
+      "id": "18",
+      "question": "¿Qué personaje protagoniza Gran Turismo?",
+      "options": [
+        "No tiene un protagonista fijo",
+        "Kratos",
+        "Cloud",
+        "Joel"
+      ],
+      "answer": "No tiene un protagonista fijo",
+      "difficulty": "easy",
+      "category": "PlayStation"
+    },
+    {
+      "id": "19",
+      "question": "¿Qué juego de Naughty Dog sigue a Joel y Ellie?",
+      "options": [
+        "The Last of Us",
+        "Uncharted",
+        "Jak and Daxter",
+        "Crash Bandicoot"
+      ],
+      "answer": "The Last of Us",
+      "difficulty": "easy",
+      "category": "PlayStation"
+    },
+    {
+      "id": "20",
+      "question": "¿Qué serie presenta al personaje Nathan Drake?",
+      "options": [
+        "Uncharted",
+        "God of War",
+        "Killzone",
+        "Ratchet & Clank"
+      ],
+      "answer": "Uncharted",
+      "difficulty": "easy",
+      "category": "PlayStation"
+    },
+    {
+      "id": "21",
+      "question": "¿Qué consola sucedió a PlayStation 3?",
+      "options": [
+        "PlayStation 4",
+        "PSP",
+        "PlayStation Vita",
+        "PlayStation 5"
+      ],
+      "answer": "PlayStation 4",
+      "difficulty": "easy",
+      "category": "PlayStation"
+    },
+    {
+      "id": "22",
+      "question": "¿Qué consola portátil de Sony se lanzó antes de PS Vita?",
+      "options": [
+        "PSP",
+        "PS One",
+        "PocketStation",
+        "PlayStation TV"
+      ],
+      "answer": "PSP",
+      "difficulty": "easy",
+      "category": "PlayStation"
+    },
+    {
+      "id": "23",
+      "question": "¿Cuál es la mascota de la serie Halo?",
+      "options": [
+        "Master Chief",
+        "Marcus Fenix",
+        "Cortana",
+        "Arbiter"
+      ],
+      "answer": "Master Chief",
+      "difficulty": "easy",
+      "category": "Xbox"
+    },
+    {
+      "id": "24",
+      "question": "¿Qué compañía fabrica Xbox?",
+      "options": [
+        "Microsoft",
+        "Sony",
+        "Nintendo",
+        "Sega"
+      ],
+      "answer": "Microsoft",
+      "difficulty": "easy",
+      "category": "Xbox"
+    },
+    {
+      "id": "25",
+      "question": "¿Qué serie de Xbox presenta a Marcus Fenix?",
+      "options": [
+        "Gears of War",
+        "Halo",
+        "Forza",
+        "Killer Instinct"
+      ],
+      "answer": "Gears of War",
+      "difficulty": "easy",
+      "category": "Xbox"
+    },
+    {
+      "id": "26",
+      "question": "¿Qué serie de carreras es exclusiva de Xbox?",
+      "options": [
+        "Forza",
+        "Gran Turismo",
+        "Mario Kart",
+        "F-Zero"
+      ],
+      "answer": "Forza",
+      "difficulty": "easy",
+      "category": "Xbox"
+    },
+    {
+      "id": "27",
+      "question": "¿Cómo se llama el servicio de suscripción de juegos de Xbox?",
+      "options": [
+        "Game Pass",
+        "PlayStation Plus",
+        "Nintendo Switch Online",
+        "EA Play"
+      ],
+      "answer": "Game Pass",
+      "difficulty": "easy",
+      "category": "Xbox"
+    },
+    {
+      "id": "28",
+      "question": "¿Qué plataforma de distribución digital pertenece a Valve?",
+      "options": [
+        "Steam",
+        "Origin",
+        "GOG",
+        "Epic Games Store"
+      ],
+      "answer": "Steam",
+      "difficulty": "easy",
+      "category": "PC"
+    },
+    {
+      "id": "29",
+      "question": "¿Qué compañía desarrolló Steam?",
+      "options": [
+        "Valve",
+        "Blizzard",
+        "Ubisoft",
+        "Square Enix"
+      ],
+      "answer": "Valve",
+      "difficulty": "easy",
+      "category": "PC"
+    },
+    {
+      "id": "30",
+      "question": "¿Qué juego de construcción usa bloques y tiene creepers?",
+      "options": [
+        "Minecraft",
+        "Terraria",
+        "Roblox",
+        "Fortnite"
+      ],
+      "answer": "Minecraft",
+      "difficulty": "easy",
+      "category": "PC"
+    },
+    {
+      "id": "31",
+      "question": "¿Qué personaje enemigo explota al acercarse en Minecraft?",
+      "options": [
+        "Creeper",
+        "Skeleton",
+        "Enderman",
+        "Zombie"
+      ],
+      "answer": "Creeper",
+      "difficulty": "easy",
+      "category": "PC"
+    },
+    {
+      "id": "32",
+      "question": "¿Qué tienda digital fue creada por Epic Games?",
+      "options": [
+        "Epic Games Store",
+        "Steam",
+        "Battle.net",
+        "GOG"
+      ],
+      "answer": "Epic Games Store",
+      "difficulty": "easy",
+      "category": "PC"
+    },
+    {
+      "id": "33",
+      "question": "¿Qué juego es conocido por sus partidas tipo battle royale con construcción?",
+      "options": [
+        "Fortnite",
+        "Portal",
+        "Half-Life",
+        "Dota 2"
+      ],
+      "answer": "Fortnite",
+      "difficulty": "easy",
+      "category": "PC"
+    },
+    {
+      "id": "34",
+      "question": "¿Qué empresa desarrolló The Witcher 3?",
+      "options": [
+        "CD Projekt Red",
+        "Bethesda",
+        "Valve",
+        "BioWare"
+      ],
+      "answer": "CD Projekt Red",
+      "difficulty": "easy",
+      "category": "PC"
+    },
+    {
+      "id": "35",
+      "question": "¿Qué juego de Valve presenta portales?",
+      "options": [
+        "Portal",
+        "Left 4 Dead",
+        "Counter-Strike",
+        "Dota 2"
+      ],
+      "answer": "Portal",
+      "difficulty": "easy",
+      "category": "PC"
+    },
+    {
+      "id": "36",
+      "question": "¿Qué género se centra en disparar desde una perspectiva en primera persona?",
+      "options": [
+        "FPS",
+        "RPG",
+        "RTS",
+        "MOBA"
+      ],
+      "answer": "FPS",
+      "difficulty": "easy",
+      "category": "Genres"
+    },
+    {
+      "id": "37",
+      "question": "¿Qué significa RPG en videojuegos?",
+      "options": [
+        "Role-Playing Game",
+        "Real Player Game",
+        "Rapid Play Game",
+        "Random Puzzle Game"
+      ],
+      "answer": "Role-Playing Game",
+      "difficulty": "easy",
+      "category": "Genres"
+    },
+    {
+      "id": "38",
+      "question": "¿Qué género enfrenta a dos equipos de personajes con objetivos y líneas?",
+      "options": [
+        "MOBA",
+        "Racing",
+        "Puzzle",
+        "Survival Horror"
+      ],
+      "answer": "MOBA",
+      "difficulty": "easy",
+      "category": "Genres"
+    },
+    {
+      "id": "39",
+      "question": "¿Qué género suele incluir exploración, gestión de recursos y supervivencia?",
+      "options": [
+        "Survival",
+        "Racing",
+        "Fighting",
+        "Rhythm"
+      ],
+      "answer": "Survival",
+      "difficulty": "easy",
+      "category": "Genres"
+    },
+    {
+      "id": "40",
+      "question": "¿Qué género representa combates uno contra uno como Street Fighter?",
+      "options": [
+        "Fighting",
+        "Strategy",
+        "Simulation",
+        "RPG"
+      ],
+      "answer": "Fighting",
+      "difficulty": "easy",
+      "category": "Genres"
+    },
+    {
+      "id": "41",
+      "question": "¿Qué género utiliza cartas como mecánica principal?",
+      "options": [
+        "Card game",
+        "Platformer",
+        "Racing",
+        "Stealth"
+      ],
+      "answer": "Card game",
+      "difficulty": "easy",
+      "category": "Genres"
+    },
+    {
+      "id": "42",
+      "question": "¿Qué género consiste principalmente en carreras de vehículos?",
+      "options": [
+        "Racing",
+        "Puzzle",
+        "RPG",
+        "Horror"
+      ],
+      "answer": "Racing",
+      "difficulty": "easy",
+      "category": "Genres"
+    },
+    {
+      "id": "43",
+      "question": "¿Qué género se centra en resolver acertijos?",
+      "options": [
+        "Puzzle",
+        "Shooter",
+        "MOBA",
+        "Sports"
+      ],
+      "answer": "Puzzle",
+      "difficulty": "easy",
+      "category": "Genres"
+    },
+    {
+      "id": "44",
+      "question": "¿Qué significa FPS?",
+      "options": [
+        "First-Person Shooter",
+        "Fast Player System",
+        "Fighting Power Series",
+        "First Puzzle Strategy"
+      ],
+      "answer": "First-Person Shooter",
+      "difficulty": "easy",
+      "category": "Genres"
+    },
+    {
+      "id": "45",
+      "question": "¿Qué género suele incluir saltos y plataformas?",
+      "options": [
+        "Platformer",
+        "Simulator",
+        "MOBA",
+        "Visual Novel"
+      ],
+      "answer": "Platformer",
+      "difficulty": "easy",
+      "category": "Genres"
+    },
+    {
+      "id": "46",
+      "question": "¿Quién es el protagonista de Sonic the Hedgehog?",
+      "options": [
+        "Sonic",
+        "Tails",
+        "Knuckles",
+        "Shadow"
+      ],
+      "answer": "Sonic",
+      "difficulty": "easy",
+      "category": "Characters"
+    },
+    {
+      "id": "47",
+      "question": "¿Qué personaje acompaña frecuentemente a Sonic y puede volar?",
+      "options": [
+        "Tails",
+        "Knuckles",
+        "Eggman",
+        "Metal Sonic"
+      ],
+      "answer": "Tails",
+      "difficulty": "easy",
+      "category": "Characters"
+    },
+    {
+      "id": "48",
+      "question": "¿Quién es el principal rival de Sonic en muchos juegos?",
+      "options": [
+        "Dr. Eggman",
+        "Bowser",
+        "Ganondorf",
+        "M. Bison"
+      ],
+      "answer": "Dr. Eggman",
+      "difficulty": "easy",
+      "category": "Characters"
+    },
+    {
+      "id": "49",
+      "question": "¿Qué personaje de Street Fighter usa normalmente un kimono blanco?",
+      "options": [
+        "Ryu",
+        "Ken",
+        "Guile",
+        "Chun-Li"
+      ],
+      "answer": "Ryu",
+      "difficulty": "easy",
+      "category": "Characters"
+    },
+    {
+      "id": "50",
+      "question": "¿Qué personaje de Street Fighter es conocido por sus patadas y qipao?",
+      "options": [
+        "Chun-Li",
+        "Cammy",
+        "Juri",
+        "Sakura"
+      ],
+      "answer": "Chun-Li",
+      "difficulty": "easy",
+      "category": "Characters"
+    },
+    {
+      "id": "51",
+      "question": "¿Qué personaje de Mortal Kombat es conocido por lanzar hielo?",
+      "options": [
+        "Sub-Zero",
+        "Scorpion",
+        "Liu Kang",
+        "Raiden"
+      ],
+      "answer": "Sub-Zero",
+      "difficulty": "easy",
+      "category": "Characters"
+    },
+    {
+      "id": "52",
+      "question": "¿Qué personaje de Mortal Kombat utiliza kunais y fuego?",
+      "options": [
+        "Scorpion",
+        "Sub-Zero",
+        "Reptile",
+        "Noob Saibot"
+      ],
+      "answer": "Scorpion",
+      "difficulty": "easy",
+      "category": "Characters"
+    },
+    {
+      "id": "53",
+      "question": "¿Quién es el protagonista de Mega Man?",
+      "options": [
+        "Mega Man",
+        "Zero",
+        "Bass",
+        "Proto Man"
+      ],
+      "answer": "Mega Man",
+      "difficulty": "easy",
+      "category": "Characters"
+    },
+    {
+      "id": "54",
+      "question": "¿Qué personaje es conocido por la frase 'Hadouken'?",
+      "options": [
+        "Ryu",
+        "Sonic",
+        "Link",
+        "Kirby"
+      ],
+      "answer": "Ryu",
+      "difficulty": "easy",
+      "category": "Characters"
+    },
+    {
+      "id": "55",
+      "question": "¿Qué personaje de Overwatch utiliza un arco?",
+      "options": [
+        "Hanzo",
+        "Tracer",
+        "Winston",
+        "Reinhardt"
+      ],
+      "answer": "Hanzo",
+      "difficulty": "easy",
+      "category": "Characters"
+    },
+    {
+      "id": "56",
+      "question": "¿Qué franquicia incluye la región de Hyrule?",
+      "options": [
+        "The Legend of Zelda",
+        "Pokémon",
+        "Final Fantasy",
+        "Halo"
+      ],
+      "answer": "The Legend of Zelda",
+      "difficulty": "easy",
+      "category": "Franchises"
+    },
+    {
+      "id": "57",
+      "question": "¿Qué franquicia utiliza Poké Balls?",
+      "options": [
+        "Pokémon",
+        "Digimon",
+        "Monster Hunter",
+        "Yo-kai Watch"
+      ],
+      "answer": "Pokémon",
+      "difficulty": "easy",
+      "category": "Franchises"
+    },
+    {
+      "id": "58",
+      "question": "¿Qué franquicia incluye a Master Chief?",
+      "options": [
+        "Halo",
+        "Gears of War",
+        "Destiny",
+        "Mass Effect"
+      ],
+      "answer": "Halo",
+      "difficulty": "easy",
+      "category": "Franchises"
+    },
+    {
+      "id": "59",
+      "question": "¿Qué franquicia incluye a Lara Croft?",
+      "options": [
+        "Tomb Raider",
+        "Uncharted",
+        "Resident Evil",
+        "Bayonetta"
+      ],
+      "answer": "Tomb Raider",
+      "difficulty": "easy",
+      "category": "Franchises"
+    },
+    {
+      "id": "60",
+      "question": "¿Qué franquicia incluye a Kratos?",
+      "options": [
+        "God of War",
+        "Devil May Cry",
+        "Dark Souls",
+        "Darksiders"
+      ],
+      "answer": "God of War",
+      "difficulty": "easy",
+      "category": "Franchises"
+    },
+    {
+      "id": "61",
+      "question": "¿Qué franquicia incluye a Solid Snake?",
+      "options": [
+        "Metal Gear",
+        "Splinter Cell",
+        "Hitman",
+        "Deus Ex"
+      ],
+      "answer": "Metal Gear",
+      "difficulty": "easy",
+      "category": "Franchises"
+    },
+    {
+      "id": "62",
+      "question": "¿Qué franquicia incluye a Cloud Strife?",
+      "options": [
+        "Final Fantasy",
+        "Dragon Quest",
+        "Kingdom Hearts",
+        "Persona"
+      ],
+      "answer": "Final Fantasy",
+      "difficulty": "easy",
+      "category": "Franchises"
+    },
+    {
+      "id": "63",
+      "question": "¿Qué franquicia incluye a Geralt de Rivia?",
+      "options": [
+        "The Witcher",
+        "Dragon Age",
+        "Dark Souls",
+        "Elder Scrolls"
+      ],
+      "answer": "The Witcher",
+      "difficulty": "easy",
+      "category": "Franchises"
+    },
+    {
+      "id": "64",
+      "question": "¿Qué franquicia incluye a Doom Slayer?",
+      "options": [
+        "DOOM",
+        "Quake",
+        "Wolfenstein",
+        "Rage"
+      ],
+      "answer": "DOOM",
+      "difficulty": "easy",
+      "category": "Franchises"
+    },
+    {
+      "id": "65",
+      "question": "¿Qué franquicia incluye a Samus Aran?",
+      "options": [
+        "Metroid",
+        "Star Fox",
+        "F-Zero",
+        "Pikmin"
+      ],
+      "answer": "Metroid",
+      "difficulty": "easy",
+      "category": "Franchises"
+    },
+    {
+      "id": "66",
+      "question": "¿Qué compañía creó Mario?",
+      "options": [
+        "Nintendo",
+        "Sega",
+        "Sony",
+        "Atari"
+      ],
+      "answer": "Nintendo",
+      "difficulty": "easy",
+      "category": "History"
+    },
+    {
+      "id": "67",
+      "question": "¿Qué compañía creó Sonic?",
+      "options": [
+        "Sega",
+        "Nintendo",
+        "Capcom",
+        "Konami"
+      ],
+      "answer": "Sega",
+      "difficulty": "easy",
+      "category": "History"
+    },
+    {
+      "id": "68",
+      "question": "¿Qué compañía creó PlayStation?",
+      "options": [
+        "Sony",
+        "Microsoft",
+        "Nintendo",
+        "Sega"
+      ],
+      "answer": "Sony",
+      "difficulty": "easy",
+      "category": "History"
+    },
+    {
+      "id": "69",
+      "question": "¿Qué compañía creó Xbox?",
+      "options": [
+        "Microsoft",
+        "Sony",
+        "Nintendo",
+        "Atari"
+      ],
+      "answer": "Microsoft",
+      "difficulty": "easy",
+      "category": "History"
+    },
+    {
+      "id": "70",
+      "question": "¿Qué empresa desarrolló Street Fighter?",
+      "options": [
+        "Capcom",
+        "Konami",
+        "Sega",
+        "Namco"
+      ],
+      "answer": "Capcom",
+      "difficulty": "easy",
+      "category": "History"
+    },
+    {
+      "id": "71",
+      "question": "¿Qué empresa desarrolló Metal Gear?",
+      "options": [
+        "Konami",
+        "Capcom",
+        "Sega",
+        "Square Enix"
+      ],
+      "answer": "Konami",
+      "difficulty": "easy",
+      "category": "History"
+    },
+    {
+      "id": "72",
+      "question": "¿Qué empresa desarrolló Final Fantasy?",
+      "options": [
+        "Square Enix",
+        "Capcom",
+        "Konami",
+        "Sega"
+      ],
+      "answer": "Square Enix",
+      "difficulty": "easy",
+      "category": "History"
+    },
+    {
+      "id": "73",
+      "question": "¿Qué empresa desarrolló Resident Evil?",
+      "options": [
+        "Capcom",
+        "Konami",
+        "Namco",
+        "Sega"
+      ],
+      "answer": "Capcom",
+      "difficulty": "easy",
+      "category": "History"
+    },
+    {
+      "id": "74",
+      "question": "¿Qué consola utilizaba cartuchos y fue muy popular en los años 80?",
+      "options": [
+        "NES",
+        "PS2",
+        "Xbox 360",
+        "Dreamcast"
+      ],
+      "answer": "NES",
+      "difficulty": "easy",
+      "category": "History"
+    },
+    {
+      "id": "75",
+      "question": "¿Qué compañía creó la consola Mega Drive/Genesis?",
+      "options": [
+        "Sega",
+        "Nintendo",
+        "Sony",
+        "Atari"
+      ],
+      "answer": "Sega",
+      "difficulty": "easy",
+      "category": "History"
+    },
+    {
+      "id": "76",
+      "question": "¿Qué es un DLC?",
+      "options": [
+        "Contenido descargable",
+        "Consola portátil",
+        "Modo de dificultad",
+        "Motor gráfico"
+      ],
+      "answer": "Contenido descargable",
+      "difficulty": "easy",
+      "category": "Game Mechanics"
+    },
+    {
+      "id": "77",
+      "question": "¿Qué significa NPC?",
+      "options": [
+        "Non-Player Character",
+        "New Playable Console",
+        "Next Player Character",
+        "Network Play Control"
+      ],
+      "answer": "Non-Player Character",
+      "difficulty": "easy",
+      "category": "Game Mechanics"
+    },
+    {
+      "id": "78",
+      "question": "¿Qué significa HP en muchos videojuegos?",
+      "options": [
+        "Health Points",
+        "High Power",
+        "Hero Progress",
+        "Hit Position"
+      ],
+      "answer": "Health Points",
+      "difficulty": "easy",
+      "category": "Game Mechanics"
+    },
+    {
+      "id": "79",
+      "question": "¿Qué suele representar XP?",
+      "options": [
+        "Experiencia",
+        "Energía",
+        "Dinero",
+        "Daño"
+      ],
+      "answer": "Experiencia",
+      "difficulty": "easy",
+      "category": "Game Mechanics"
+    },
+    {
+      "id": "80",
+      "question": "¿Qué es un checkpoint?",
+      "options": [
+        "Punto de control",
+        "Jefe final",
+        "Objeto secreto",
+        "Modo multijugador"
+      ],
+      "answer": "Punto de control",
+      "difficulty": "easy",
+      "category": "Game Mechanics"
+    },
+    {
+      "id": "81",
+      "question": "¿Qué es un boss?",
+      "options": [
+        "Jefe",
+        "Aliado",
+        "Objeto",
+        "Mapa"
+      ],
+      "answer": "Jefe",
+      "difficulty": "easy",
+      "category": "Game Mechanics"
+    },
+    {
+      "id": "82",
+      "question": "¿Qué significa respawn?",
+      "options": [
+        "Reaparecer",
+        "Guardar",
+        "Subir de nivel",
+        "Comprar"
+      ],
+      "answer": "Reaparecer",
+      "difficulty": "easy",
+      "category": "Game Mechanics"
+    },
+    {
+      "id": "83",
+      "question": "¿Qué es un speedrun?",
+      "options": [
+        "Completar un juego lo más rápido posible",
+        "Jugar sin sonido",
+        "Terminar sin enemigos",
+        "Jugar en línea"
+      ],
+      "answer": "Completar un juego lo más rápido posible",
+      "difficulty": "easy",
+      "category": "Game Mechanics"
+    },
+    {
+      "id": "84",
+      "question": "¿Qué es un easter egg en un videojuego?",
+      "options": [
+        "Secreto o referencia escondida",
+        "Un tipo de enemigo",
+        "Un DLC",
+        "Un error de conexión"
+      ],
+      "answer": "Secreto o referencia escondida",
+      "difficulty": "easy",
+      "category": "Game Mechanics"
+    },
+    {
+      "id": "85",
+      "question": "¿Qué es un remake?",
+      "options": [
+        "Una nueva versión reconstruida de un juego",
+        "Un parche menor",
+        "Un DLC de música",
+        "Un mod multijugador"
+      ],
+      "answer": "Una nueva versión reconstruida de un juego",
+      "difficulty": "easy",
+      "category": "Game Mechanics"
+    },
+    {
+      "id": "86",
+      "question": "¿Qué juego es conocido por el competitivo de League of Legends?",
+      "options": [
+        "League of Legends",
+        "Minecraft",
+        "The Sims",
+        "Portal"
+      ],
+      "answer": "League of Legends",
+      "difficulty": "easy",
+      "category": "Esports"
+    },
+    {
+      "id": "87",
+      "question": "¿Qué significa PvP?",
+      "options": [
+        "Player versus Player",
+        "Player versus Program",
+        "Power versus Power",
+        "Play versus Play"
+      ],
+      "answer": "Player versus Player",
+      "difficulty": "easy",
+      "category": "Esports"
+    },
+    {
+      "id": "88",
+      "question": "¿Qué significa PvE?",
+      "options": [
+        "Player versus Environment",
+        "Player versus Enemy only",
+        "Power versus Environment",
+        "Play versus Event"
+      ],
+      "answer": "Player versus Environment",
+      "difficulty": "easy",
+      "category": "Esports"
+    },
+    {
+      "id": "89",
+      "question": "¿Qué género es League of Legends?",
+      "options": [
+        "MOBA",
+        "FPS",
+        "RPG",
+        "Racing"
+      ],
+      "answer": "MOBA",
+      "difficulty": "easy",
+      "category": "Esports"
+    },
+    {
+      "id": "90",
+      "question": "¿Qué género es Counter-Strike?",
+      "options": [
+        "FPS",
+        "RPG",
+        "MOBA",
+        "Fighting"
+      ],
+      "answer": "FPS",
+      "difficulty": "easy",
+      "category": "Esports"
+    },
+    {
+      "id": "91",
+      "question": "¿Qué juego popular tiene héroes y partidas 5 contra 5?",
+      "options": [
+        "Overwatch",
+        "Tetris",
+        "The Sims",
+        "Animal Crossing"
+      ],
+      "answer": "Overwatch",
+      "difficulty": "easy",
+      "category": "Esports"
+    },
+    {
+      "id": "92",
+      "question": "¿Qué juego indie tiene una protagonista llamada Madeline?",
+      "options": [
+        "Celeste",
+        "Hades",
+        "Hollow Knight",
+        "Undertale"
+      ],
+      "answer": "Celeste",
+      "difficulty": "easy",
+      "category": "Indie"
+    },
+    {
+      "id": "93",
+      "question": "¿Qué juego indie está protagonizado por un caballero en un reino de insectos?",
+      "options": [
+        "Hollow Knight",
+        "Celeste",
+        "Dead Cells",
+        "Cuphead"
+      ],
+      "answer": "Hollow Knight",
+      "difficulty": "easy",
+      "category": "Indie"
+    },
+    {
+      "id": "94",
+      "question": "¿Qué juego indie presenta a Zagreus intentando escapar del inframundo?",
+      "options": [
+        "Hades",
+        "Dead Cells",
+        "Bastion",
+        "Transistor"
+      ],
+      "answer": "Hades",
+      "difficulty": "easy",
+      "category": "Indie"
+    },
+    {
+      "id": "95",
+      "question": "¿Qué juego indie tiene un estilo visual inspirado en dibujos de los años 1930?",
+      "options": [
+        "Cuphead",
+        "Celeste",
+        "Limbo",
+        "Inside"
+      ],
+      "answer": "Cuphead",
+      "difficulty": "easy",
+      "category": "Indie"
+    },
+    {
+      "id": "96",
+      "question": "¿Qué juego indie es famoso por sus decisiones y finales múltiples y tiene personajes como Sans?",
+      "options": [
+        "Undertale",
+        "Terraria",
+        "Stardew Valley",
+        "Braid"
+      ],
+      "answer": "Undertale",
+      "difficulty": "easy",
+      "category": "Indie"
+    },
+    {
+      "id": "97",
+      "question": "¿Qué juego de granjas incluye cultivos, minería y relaciones?",
+      "options": [
+        "Stardew Valley",
+        "Hades",
+        "Celeste",
+        "Limbo"
+      ],
+      "answer": "Stardew Valley",
+      "difficulty": "easy",
+      "category": "Indie"
+    },
+    {
+      "id": "98",
+      "question": "¿Qué franquicia de terror incluye a zombies y Umbrella?",
+      "options": [
+        "Resident Evil",
+        "Silent Hill",
+        "Dead Space",
+        "Outlast"
+      ],
+      "answer": "Resident Evil",
+      "difficulty": "easy",
+      "category": "Horror"
+    },
+    {
+      "id": "99",
+      "question": "¿Qué franquicia se desarrolla en un pueblo envuelto en niebla?",
+      "options": [
+        "Silent Hill",
+        "Resident Evil",
+        "Doom",
+        "Amnesia"
+      ],
+      "answer": "Silent Hill",
+      "difficulty": "easy",
+      "category": "Horror"
+    },
+    {
+      "id": "100",
+      "question": "¿Qué juego de terror tiene como protagonista a Isaac Clarke?",
+      "options": [
+        "Dead Space",
+        "Resident Evil 4",
+        "Amnesia",
+        "Outlast"
+      ],
+      "answer": "Dead Space",
+      "difficulty": "easy",
+      "category": "Horror"
+    },
+    {
+      "id": "101",
+      "question": "¿En qué año se lanzó la primera PlayStation en Japón?",
+      "options": [
+        "1994",
+        "1996",
+        "1998",
+        "2000"
+      ],
+      "answer": "1994",
       "difficulty": "medium",
+      "category": "History"
+    },
+    {
+      "id": "102",
+      "question": "¿En qué año se lanzó Nintendo Entertainment System en Japón como Famicom?",
+      "options": [
+        "1983",
+        "1985",
+        "1987",
+        "1989"
+      ],
+      "answer": "1983",
+      "difficulty": "medium",
+      "category": "History"
+    },
+    {
+      "id": "103",
+      "question": "¿Cuál fue la primera consola doméstica de Nintendo?",
+      "options": [
+        "Color TV-Game",
+        "NES",
+        "SNES",
+        "GameCube"
+      ],
+      "answer": "Color TV-Game",
+      "difficulty": "medium",
+      "category": "History"
+    },
+    {
+      "id": "104",
+      "question": "¿Qué compañía desarrolló la consola Dreamcast?",
+      "options": [
+        "Sega",
+        "Atari",
+        "Sony",
+        "NEC"
+      ],
+      "answer": "Sega",
+      "difficulty": "medium",
+      "category": "History"
+    },
+    {
+      "id": "105",
+      "question": "¿Qué consola de Sega fue sucesora de Mega Drive/Genesis?",
+      "options": [
+        "Saturn",
+        "Dreamcast",
+        "Master System",
+        "Game Gear"
+      ],
+      "answer": "Saturn",
+      "difficulty": "medium",
+      "category": "History"
+    },
+    {
+      "id": "106",
+      "question": "¿Qué compañía creó la serie Tekken?",
+      "options": [
+        "Namco",
+        "Capcom",
+        "Konami",
+        "Sega"
+      ],
+      "answer": "Namco",
+      "difficulty": "medium",
+      "category": "History"
+    },
+    {
+      "id": "107",
+      "question": "¿Qué compañía desarrolló Castlevania originalmente?",
+      "options": [
+        "Konami",
+        "Capcom",
+        "Sega",
+        "Nintendo"
+      ],
+      "answer": "Konami",
+      "difficulty": "medium",
+      "category": "History"
+    },
+    {
+      "id": "108",
+      "question": "¿Qué compañía desarrolló Mega Man?",
+      "options": [
+        "Capcom",
+        "Konami",
+        "Sega",
+        "Namco"
+      ],
+      "answer": "Capcom",
+      "difficulty": "medium",
+      "category": "History"
+    },
+    {
+      "id": "109",
+      "question": "¿Qué consola fue conocida por su lector de discos y el nombre PlayStation?",
+      "options": [
+        "Sony PlayStation",
+        "Sega Saturn",
+        "Nintendo 64",
+        "3DO"
+      ],
+      "answer": "Sony PlayStation",
+      "difficulty": "medium",
+      "category": "History"
+    },
+    {
+      "id": "110",
+      "question": "¿Cuál fue la primera consola de Microsoft?",
+      "options": [
+        "Xbox",
+        "Xbox 360",
+        "Xbox One",
+        "Xbox Series X"
+      ],
+      "answer": "Xbox",
+      "difficulty": "medium",
+      "category": "History"
+    },
+    {
+      "id": "111",
+      "question": "¿Cuál es el nombre completo de Link en los juegos de Zelda?",
+      "options": [
+        "Link",
+        "Link Hyrule",
+        "No tiene apellido establecido",
+        "Link Hero"
+      ],
+      "answer": "No tiene apellido establecido",
+      "difficulty": "medium",
+      "category": "Nintendo"
+    },
+    {
+      "id": "112",
+      "question": "¿Qué personaje de Nintendo es conocido como King of Fighters?",
+      "options": [
+        "Captain Falcon",
+        "Mario",
+        "Fox",
+        "Marth"
+      ],
+      "answer": "Captain Falcon",
+      "difficulty": "medium",
+      "category": "Nintendo"
+    },
+    {
+      "id": "113",
+      "question": "¿Qué serie de Nintendo gira alrededor de criaturas llamadas Pikmin?",
+      "options": [
+        "Pikmin",
+        "Kirby",
+        "Star Fox",
+        "F-Zero"
+      ],
+      "answer": "Pikmin",
+      "difficulty": "medium",
+      "category": "Nintendo"
+    },
+    {
+      "id": "114",
+      "question": "¿Cuál fue la primera entrega de Super Smash Bros.?",
+      "options": [
+        "Super Smash Bros.",
+        "Super Smash Bros. Melee",
+        "Super Smash Bros. Brawl",
+        "Super Smash Bros. Ultimate"
+      ],
+      "answer": "Super Smash Bros.",
+      "difficulty": "medium",
+      "category": "Nintendo"
+    },
+    {
+      "id": "115",
+      "question": "¿Qué juego introdujo a Mario como Jumpman?",
+      "options": [
+        "Donkey Kong",
+        "Mario Bros.",
+        "Super Mario Bros.",
+        "Wrecking Crew"
+      ],
+      "answer": "Donkey Kong",
+      "difficulty": "medium",
+      "category": "Nintendo"
+    },
+    {
+      "id": "116",
+      "question": "¿Qué personaje protagoniza Fire Emblem: Three Houses?",
+      "options": [
+        "Byleth",
+        "Marth",
+        "Ike",
+        "Roy"
+      ],
+      "answer": "Byleth",
+      "difficulty": "medium",
+      "category": "Nintendo"
+    },
+    {
+      "id": "117",
+      "question": "¿Qué reino gobierna Peach en la mayoría de juegos de Mario?",
+      "options": [
+        "Reino Champiñón",
+        "Hyrule",
+        "Dream Land",
+        "Mushroom Kingdom no es un reino"
+      ],
+      "answer": "Reino Champiñón",
+      "difficulty": "medium",
+      "category": "Nintendo"
+    },
+    {
+      "id": "118",
+      "question": "¿Qué arma utiliza Samus como ataque característico?",
+      "options": [
+        "Arm Cannon",
+        "Master Sword",
+        "Buster Sword",
+        "Energy Sword"
+      ],
+      "answer": "Arm Cannon",
+      "difficulty": "medium",
+      "category": "Nintendo"
+    },
+    {
+      "id": "119",
+      "question": "¿Qué juego de Zelda presenta una versión de Link llamada Hero of Time?",
+      "options": [
+        "Ocarina of Time",
+        "Wind Waker",
+        "Skyward Sword",
+        "Breath of the Wild"
+      ],
+      "answer": "Ocarina of Time",
+      "difficulty": "medium",
+      "category": "Nintendo"
+    },
+    {
+      "id": "120",
+      "question": "¿Qué personaje es el rey de Dream Land?",
+      "options": [
+        "King Dedede",
+        "Meta Knight",
+        "Kirby",
+        "Marx"
+      ],
+      "answer": "King Dedede",
+      "difficulty": "medium",
+      "category": "Nintendo"
+    },
+    {
+      "id": "121",
+      "question": "¿Qué estudio desarrolló Shadow of the Colossus?",
+      "options": [
+        "Team Ico",
+        "Naughty Dog",
+        "Santa Monica Studio",
+        "Insomniac"
+      ],
+      "answer": "Team Ico",
+      "difficulty": "medium",
+      "category": "PlayStation"
+    },
+    {
+      "id": "122",
+      "question": "¿Qué estudio creó Ratchet & Clank?",
+      "options": [
+        "Insomniac Games",
+        "Naughty Dog",
+        "Sucker Punch",
+        "Polyphony Digital"
+      ],
+      "answer": "Insomniac Games",
+      "difficulty": "medium",
+      "category": "PlayStation"
+    },
+    {
+      "id": "123",
+      "question": "¿Qué estudio desarrolló Ghost of Tsushima?",
+      "options": [
+        "Sucker Punch",
+        "Santa Monica Studio",
+        "Guerrilla Games",
+        "Bluepoint"
+      ],
+      "answer": "Sucker Punch",
+      "difficulty": "medium",
+      "category": "PlayStation"
+    },
+    {
+      "id": "124",
+      "question": "¿Qué estudio desarrolló Horizon Zero Dawn?",
+      "options": [
+        "Guerrilla Games",
+        "Naughty Dog",
+        "Insomniac",
+        "Media Molecule"
+      ],
+      "answer": "Guerrilla Games",
+      "difficulty": "medium",
+      "category": "PlayStation"
+    },
+    {
+      "id": "125",
+      "question": "¿Qué personaje protagoniza Death Stranding?",
+      "options": [
+        "Sam Porter Bridges",
+        "Joel Miller",
+        "Nathan Drake",
+        "Jin Sakai"
+      ],
+      "answer": "Sam Porter Bridges",
+      "difficulty": "medium",
+      "category": "PlayStation"
+    },
+    {
+      "id": "126",
+      "question": "¿Qué personaje protagoniza The Last of Us Part II junto con Ellie?",
+      "options": [
+        "Abby Anderson",
+        "Aloy",
+        "Chloe Frazer",
+        "Faith Connors"
+      ],
+      "answer": "Abby Anderson",
+      "difficulty": "medium",
+      "category": "PlayStation"
+    },
+    {
+      "id": "127",
+      "question": "¿Qué serie protagoniza Sly Cooper?",
+      "options": [
+        "Sly Cooper",
+        "Jak and Daxter",
+        "Ratchet & Clank",
+        "Infamous"
+      ],
+      "answer": "Sly Cooper",
+      "difficulty": "medium",
+      "category": "PlayStation"
+    },
+    {
+      "id": "128",
+      "question": "¿Qué juego de PlayStation presenta una ciudad llamada Midgar?",
+      "options": [
+        "Final Fantasy VII",
+        "Final Fantasy X",
+        "Kingdom Hearts",
+        "NieR Automata"
+      ],
+      "answer": "Final Fantasy VII",
+      "difficulty": "medium",
+      "category": "PlayStation"
+    },
+    {
+      "id": "129",
+      "question": "¿Qué estudio desarrolló Halo originalmente?",
+      "options": [
+        "Bungie",
+        "343 Industries",
+        "Rare",
+        "Epic Games"
+      ],
+      "answer": "Bungie",
+      "difficulty": "medium",
+      "category": "Xbox"
+    },
+    {
+      "id": "130",
+      "question": "¿Qué estudio creó Ori and the Blind Forest?",
+      "options": [
+        "Moon Studios",
+        "Rare",
+        "Double Fine",
+        "Obsidian"
+      ],
+      "answer": "Moon Studios",
+      "difficulty": "medium",
+      "category": "Xbox"
+    },
+    {
+      "id": "131",
+      "question": "¿Qué estudio desarrolló Sea of Thieves?",
+      "options": [
+        "Rare",
+        "Bungie",
+        "343 Industries",
+        "Turn 10"
+      ],
+      "answer": "Rare",
+      "difficulty": "medium",
+      "category": "Xbox"
+    },
+    {
+      "id": "132",
+      "question": "¿Qué estudio desarrolló Forza Horizon?",
+      "options": [
+        "Playground Games",
+        "Turn 10",
+        "Rare",
+        "Lionhead"
+      ],
+      "answer": "Playground Games",
+      "difficulty": "medium",
+      "category": "Xbox"
+    },
+    {
+      "id": "133",
+      "question": "¿Qué estudio desarrolló The Outer Worlds?",
+      "options": [
+        "Obsidian Entertainment",
+        "Bethesda Game Studios",
+        "Rare",
+        "343 Industries"
+      ],
+      "answer": "Obsidian Entertainment",
+      "difficulty": "medium",
+      "category": "Xbox"
+    },
+    {
+      "id": "134",
+      "question": "¿Qué motor utiliza Unreal Tournament y otros juegos de Epic?",
+      "options": [
+        "Unreal Engine",
+        "Source",
+        "Unity",
+        "id Tech"
+      ],
+      "answer": "Unreal Engine",
+      "difficulty": "medium",
+      "category": "PC"
+    },
+    {
+      "id": "135",
+      "question": "¿Qué compañía creó el motor Unity?",
+      "options": [
+        "Unity Technologies",
+        "Valve",
+        "Epic Games",
+        "Crytek"
+      ],
+      "answer": "Unity Technologies",
+      "difficulty": "medium",
+      "category": "PC"
+    },
+    {
+      "id": "136",
+      "question": "¿Qué motor gráfico está asociado con Half-Life 2?",
+      "options": [
+        "Source",
+        "Unreal Engine",
+        "Frostbite",
+        "id Tech"
+      ],
+      "answer": "Source",
+      "difficulty": "medium",
+      "category": "PC"
+    },
+    {
+      "id": "137",
+      "question": "¿Qué motor gráfico fue creado por id Software y utilizado en DOOM?",
+      "options": [
+        "id Tech",
+        "Source",
+        "Creation Engine",
+        "RE Engine"
+      ],
+      "answer": "id Tech",
+      "difficulty": "medium",
+      "category": "PC"
+    },
+    {
+      "id": "138",
+      "question": "¿Qué plataforma es conocida por sus juegos sin DRM?",
+      "options": [
+        "GOG",
+        "Steam",
+        "Battle.net",
+        "Origin"
+      ],
+      "answer": "GOG",
+      "difficulty": "medium",
+      "category": "PC"
+    },
+    {
+      "id": "139",
+      "question": "¿Qué compañía desarrolla Battle.net?",
+      "options": [
+        "Blizzard Entertainment",
+        "Valve",
+        "EA",
+        "Ubisoft"
+      ],
+      "answer": "Blizzard Entertainment",
+      "difficulty": "medium",
+      "category": "PC"
+    },
+    {
+      "id": "140",
+      "question": "¿Qué juego de estrategia en tiempo real pertenece a Blizzard?",
+      "options": [
+        "StarCraft",
+        "Civilization",
+        "Age of Empires",
+        "Total War"
+      ],
+      "answer": "StarCraft",
+      "difficulty": "medium",
+      "category": "PC"
+    },
+    {
+      "id": "141",
+      "question": "¿Qué juego de Valve es un MOBA?",
+      "options": [
+        "Dota 2",
+        "Portal 2",
+        "Half-Life 2",
+        "Left 4 Dead 2"
+      ],
+      "answer": "Dota 2",
+      "difficulty": "medium",
+      "category": "PC"
+    },
+    {
+      "id": "142",
+      "question": "¿Qué juego de Blizzard es un MMORPG?",
+      "options": [
+        "World of Warcraft",
+        "StarCraft II",
+        "Overwatch",
+        "Diablo II"
+      ],
+      "answer": "World of Warcraft",
+      "difficulty": "medium",
+      "category": "PC"
+    },
+    {
+      "id": "143",
+      "question": "¿Qué personaje protagoniza Final Fantasy VII?",
+      "options": [
+        "Cloud Strife",
+        "Squall Leonhart",
+        "Tidus",
+        "Noctis Lucis Caelum"
+      ],
+      "answer": "Cloud Strife",
+      "difficulty": "medium",
+      "category": "RPG"
+    },
+    {
+      "id": "144",
+      "question": "¿Qué personaje protagoniza Final Fantasy X?",
+      "options": [
+        "Tidus",
+        "Cloud",
+        "Lightning",
+        "Vaan"
+      ],
+      "answer": "Tidus",
+      "difficulty": "medium",
+      "category": "RPG"
+    },
+    {
+      "id": "145",
+      "question": "¿Qué personaje protagoniza Final Fantasy XV?",
+      "options": [
+        "Noctis",
+        "Clive",
+        "Squall",
+        "Zidane"
+      ],
+      "answer": "Noctis",
+      "difficulty": "medium",
+      "category": "RPG"
+    },
+    {
+      "id": "146",
+      "question": "¿Qué personaje protagoniza Final Fantasy XVI?",
+      "options": [
+        "Clive Rosfield",
+        "Noctis",
+        "Cloud",
+        "Tidus"
+      ],
+      "answer": "Clive Rosfield",
+      "difficulty": "medium",
+      "category": "RPG"
+    },
+    {
+      "id": "147",
+      "question": "¿Qué compañía desarrolló Chrono Trigger junto con colaboradores de Square y Enix?",
+      "options": [
+        "Square",
+        "Capcom",
+        "Konami",
+        "Sega"
+      ],
+      "answer": "Square",
+      "difficulty": "medium",
+      "category": "RPG"
+    },
+    {
+      "id": "148",
+      "question": "¿Qué serie utiliza el sistema Social Links en varias entregas?",
+      "options": [
+        "Persona",
+        "Dragon Quest",
+        "Final Fantasy",
+        "Tales"
+      ],
+      "answer": "Persona",
+      "difficulty": "medium",
+      "category": "RPG"
+    },
+    {
+      "id": "149",
+      "question": "¿Qué juego de FromSoftware tiene una región llamada Lordran?",
+      "options": [
+        "Dark Souls",
+        "Bloodborne",
+        "Sekiro",
+        "Elden Ring"
+      ],
+      "answer": "Dark Souls",
+      "difficulty": "medium",
+      "category": "RPG"
+    },
+    {
+      "id": "150",
+      "question": "¿Qué juego de FromSoftware tiene una ciudad llamada Yharnam?",
+      "options": [
+        "Bloodborne",
+        "Dark Souls III",
+        "Sekiro",
+        "Demon's Souls"
+      ],
+      "answer": "Bloodborne",
+      "difficulty": "medium",
+      "category": "RPG"
+    },
+    {
+      "id": "151",
+      "question": "¿Qué juego de FromSoftware está ambientado en la Tierra de las Cañas y tiene shinobi como protagonista?",
+      "options": [
+        "Sekiro: Shadows Die Twice",
+        "Bloodborne",
+        "Dark Souls",
+        "Elden Ring"
+      ],
+      "answer": "Sekiro: Shadows Die Twice",
+      "difficulty": "medium",
+      "category": "RPG"
+    },
+    {
+      "id": "152",
+      "question": "¿Qué juego de FromSoftware tiene un mundo llamado The Lands Between?",
+      "options": [
+        "Elden Ring",
+        "Dark Souls",
+        "Bloodborne",
+        "Sekiro"
+      ],
+      "answer": "Elden Ring",
+      "difficulty": "medium",
+      "category": "RPG"
+    },
+    {
+      "id": "153",
+      "question": "¿Qué serie de RPG incluye la clase Warrior of Light?",
+      "options": [
+        "Final Fantasy",
+        "Dragon Quest",
+        "Persona",
+        "Mass Effect"
+      ],
+      "answer": "Final Fantasy",
+      "difficulty": "medium",
+      "category": "RPG"
+    },
+    {
+      "id": "154",
+      "question": "¿Qué estudio desarrolló el primer Resident Evil?",
+      "options": [
+        "Capcom",
+        "Konami",
+        "Naughty Dog",
+        "Sega"
+      ],
+      "answer": "Capcom",
+      "difficulty": "medium",
+      "category": "Horror"
+    },
+    {
+      "id": "155",
+      "question": "¿Qué personaje es el protagonista de Resident Evil 2 junto con Claire?",
       "options": [
         "Leon S. Kennedy",
         "Chris Redfield",
         "Ethan Winters",
-        "Jill Valentine"
+        "Barry Burton"
       ],
-      "correctAnswer": "Leon S. Kennedy"
-    },
-    {
-      "id": "6",
-      "question": "¿Cuál de estos juegos fue creado por Hideo Kojima?",
-      "category": "Acción",
+      "answer": "Leon S. Kennedy",
       "difficulty": "medium",
-      "options": [
-        "Death Stranding",
-        "Bloodborne",
-        "Dark Souls",
-        "Resident Evil"
-      ],
-      "correctAnswer": "Death Stranding"
+      "category": "Horror"
     },
     {
-      "id": "7",
-      "question": "¿Qué juego presenta al personaje Pyramid Head?",
-      "category": "Survival Horror",
+      "id": "156",
+      "question": "¿Qué personaje protagoniza Resident Evil 7?",
+      "options": [
+        "Ethan Winters",
+        "Leon Kennedy",
+        "Chris Redfield",
+        "Carlos Oliveira"
+      ],
+      "answer": "Ethan Winters",
       "difficulty": "medium",
-      "options": [
-        "Silent Hill 2",
-        "Resident Evil 2",
-        "Dead Space",
-        "Outlast"
-      ],
-      "correctAnswer": "Silent Hill 2"
+      "category": "Horror"
     },
     {
-      "id": "8",
-      "question": "¿Cuál es el nombre del protagonista de SIGNALIS?",
-      "category": "Survival Horror",
+      "id": "157",
+      "question": "¿Qué personaje protagoniza Resident Evil 4?",
+      "options": [
+        "Leon S. Kennedy",
+        "Ethan Winters",
+        "Jill Valentine",
+        "Rebecca Chambers"
+      ],
+      "answer": "Leon S. Kennedy",
       "difficulty": "medium",
-      "options": [
-        "Elster",
-        "Isaac",
-        "James",
-        "Heather"
-      ],
-      "correctAnswer": "Elster"
+      "category": "Horror"
     },
     {
-      "id": "9",
-      "question": "¿Cuál de estos juegos pertenece a la serie Dark Souls?",
-      "category": "RPG",
-      "difficulty": "easy",
+      "id": "158",
+      "question": "¿Qué estudio desarrolló Silent Hill?",
       "options": [
-        "Dark Souls III",
-        "Sekiro",
-        "Bloodborne",
-        "Elden Ring"
+        "Konami",
+        "Capcom",
+        "Sega",
+        "Sony"
       ],
-      "correctAnswer": "Dark Souls III"
-    },
-    {
-      "id": "10",
-      "question": "¿Qué estudio desarrolló Hollow Knight?",
-      "category": "Metroidvania",
+      "answer": "Konami",
       "difficulty": "medium",
-      "options": [
-        "Team Cherry",
-        "Valve",
-        "Naughty Dog",
-        "Capcom"
-      ],
-      "correctAnswer": "Team Cherry"
+      "category": "Horror"
     },
     {
-      "id": "11",
-      "question": "¿Cuál de estos juegos fue desarrollado por CD Projekt Red?",
-      "category": "RPG",
-      "difficulty": "easy",
-      "options": [
-        "Cyberpunk 2077",
-        "Elden Ring",
-        "Death Stranding",
-        "Control"
-      ],
-      "correctAnswer": "Cyberpunk 2077"
-    },
-    {
-      "id": "12",
-      "question": "¿Cuál es el nombre del protagonista de Silent Hill 2?",
-      "category": "Survival Horror",
-      "difficulty": "medium",
+      "id": "159",
+      "question": "¿Qué personaje protagoniza Silent Hill 2?",
       "options": [
         "James Sunderland",
         "Harry Mason",
-        "Henry Townshend",
-        "Alex Shepherd"
+        "Heather Mason",
+        "Henry Townshend"
       ],
-      "correctAnswer": "James Sunderland"
-    },
-    {
-      "id": "13",
-      "question": "¿Cuál de estos juegos pertenece al género roguelike?",
-      "category": "Indie",
+      "answer": "James Sunderland",
       "difficulty": "medium",
-      "options": [
-        "Hades",
-        "Resident Evil 4",
-        "Silent Hill 2",
-        "Death Stranding"
-      ],
-      "correctAnswer": "Hades"
+      "category": "Horror"
     },
     {
-      "id": "14",
-      "question": "¿Qué juego tiene como protagonista a Zagreus?",
-      "category": "Indie",
-      "difficulty": "easy",
+      "id": "160",
+      "question": "¿Qué criatura de Silent Hill tiene una gran cabeza triangular?",
       "options": [
-        "Hades",
-        "Hollow Knight",
-        "Celeste",
-        "Dead Cells"
+        "Pyramid Head",
+        "Lying Figure",
+        "Mannequin",
+        "Closer"
       ],
-      "correctAnswer": "Hades"
+      "answer": "Pyramid Head",
+      "difficulty": "medium",
+      "category": "Horror"
     },
     {
-      "id": "15",
-      "question": "¿Cuál de estos juegos fue desarrollado por Remedy Entertainment?",
-      "category": "Acción",
-      "difficulty": "hard",
+      "id": "161",
+      "question": "¿Qué estudio desarrolló Dead Space original?",
       "options": [
-        "Control",
-        "Bloodborne",
-        "Sekiro",
-        "Resident Evil 7"
+        "Visceral Games",
+        "EA Motive",
+        "BioWare",
+        "Criterion"
       ],
-      "correctAnswer": "Control"
+      "answer": "Visceral Games",
+      "difficulty": "medium",
+      "category": "Horror"
     },
     {
-      "id": "16",
-      "question": "¿Qué personaje es protagonista de Metal Gear Solid?",
-      "category": "Acción",
-      "difficulty": "hard",
+      "id": "162",
+      "question": "¿Qué franquicia incluye los animatrónicos Freddy, Bonnie, Chica y Foxy?",
       "options": [
-        "Solid Snake",
+        "Five Nights at Freddy's",
+        "Bendy",
+        "Poppy Playtime",
+        "Little Nightmares"
+      ],
+      "answer": "Five Nights at Freddy's",
+      "difficulty": "medium",
+      "category": "Horror"
+    },
+    {
+      "id": "163",
+      "question": "¿Qué estudio desarrolló Amnesia: The Dark Descent?",
+      "options": [
+        "Frictional Games",
+        "Red Barrels",
+        "Bloober Team",
+        "Creative Assembly"
+      ],
+      "answer": "Frictional Games",
+      "difficulty": "medium",
+      "category": "Horror"
+    },
+    {
+      "id": "164",
+      "question": "¿Qué estudio desarrolló Devil May Cry?",
+      "options": [
+        "Capcom",
+        "Konami",
+        "PlatinumGames",
+        "Square Enix"
+      ],
+      "answer": "Capcom",
+      "difficulty": "medium",
+      "category": "Action"
+    },
+    {
+      "id": "165",
+      "question": "¿Qué personaje es protagonista de Devil May Cry?",
+      "options": [
         "Dante",
+        "Nero",
         "Vergil",
-        "Jin Kazama"
+        "V"
       ],
-      "correctAnswer": "Solid Snake"
+      "answer": "Dante",
+      "difficulty": "medium",
+      "category": "Action"
     },
     {
-      "id": "17",
-      "question": "¿Cuál de estos juegos fue desarrollado por FromSoftware y publicado en 2022?",
-      "category": "RPG",
-      "difficulty": "hard",
-      "options": [
-        "Elden Ring",
-        "Bloodborne",
-        "Dark Souls III",
-        "Sekiro"
-      ],
-      "correctAnswer": "Elden Ring"
-    },
-    {
-      "id": "18",
-      "question": "¿Cuál es el nombre de la protagonista de Bayonetta?",
-      "category": "Acción",
-      "difficulty": "hard",
+      "id": "166",
+      "question": "¿Qué personaje protagoniza Bayonetta?",
       "options": [
         "Bayonetta",
         "2B",
-        "Jill",
-        "Ada"
+        "Jill Valentine",
+        "Lara Croft"
       ],
-      "correctAnswer": "Bayonetta"
-    },
-    {
-      "id": "19",
-      "question": "¿Qué juego tiene como protagonista a 2B?",
-      "category": "RPG",
+      "answer": "Bayonetta",
       "difficulty": "medium",
-      "options": [
-        "NieR:Automata",
-        "Bayonetta",
-        "Control",
-        "Signalis"
-      ],
-      "correctAnswer": "NieR:Automata"
+      "category": "Action"
     },
     {
-      "id": "20",
-      "question": "¿Cuál de estos juegos fue desarrollado por Team Silent?",
-      "category": "Survival Horror",
-      "difficulty": "hard",
+      "id": "167",
+      "question": "¿Qué estudio desarrolló NieR:Automata?",
       "options": [
-        "Silent Hill 2",
-        "Resident Evil 2",
-        "Dead Space",
-        "Fatal Frame"
+        "PlatinumGames",
+        "Square Enix",
+        "FromSoftware",
+        "Capcom"
       ],
-      "correctAnswer": "Silent Hill 2"
+      "answer": "PlatinumGames",
+      "difficulty": "medium",
+      "category": "Action"
+    },
+    {
+      "id": "168",
+      "question": "¿Qué personaje protagoniza NieR:Automata?",
+      "options": [
+        "2B",
+        "A2",
+        "9S",
+        "Emil"
+      ],
+      "answer": "2B",
+      "difficulty": "medium",
+      "category": "Action"
+    },
+    {
+      "id": "169",
+      "question": "¿Qué estudio desarrolló Metal Gear Solid?",
+      "options": [
+        "Konami",
+        "Capcom",
+        "Sega",
+        "Namco"
+      ],
+      "answer": "Konami",
+      "difficulty": "medium",
+      "category": "Action"
+    },
+    {
+      "id": "170",
+      "question": "¿Qué nombre recibe el protagonista de Metal Gear Solid?",
+      "options": [
+        "Solid Snake",
+        "Liquid Snake",
+        "Big Boss",
+        "Raiden"
+      ],
+      "answer": "Solid Snake",
+      "difficulty": "medium",
+      "category": "Action"
+    },
+    {
+      "id": "171",
+      "question": "¿Qué juego presenta a un asesino llamado Agent 47?",
+      "options": [
+        "Hitman",
+        "Dishonored",
+        "Deus Ex",
+        "Thief"
+      ],
+      "answer": "Hitman",
+      "difficulty": "medium",
+      "category": "Action"
+    },
+    {
+      "id": "172",
+      "question": "¿Qué juego presenta a Corvo Attano?",
+      "options": [
+        "Dishonored",
+        "Prey",
+        "Deathloop",
+        "Bioshock"
+      ],
+      "answer": "Dishonored",
+      "difficulty": "medium",
+      "category": "Action"
+    },
+    {
+      "id": "173",
+      "question": "¿Qué estudio desarrolló Deathloop?",
+      "options": [
+        "Arkane Studios",
+        "id Software",
+        "Bethesda Game Studios",
+        "MachineGames"
+      ],
+      "answer": "Arkane Studios",
+      "difficulty": "medium",
+      "category": "Action"
+    },
+    {
+      "id": "174",
+      "question": "¿Qué estudio desarrolló Hollow Knight?",
+      "options": [
+        "Team Cherry",
+        "Supergiant Games",
+        "Motion Twin",
+        "Re-Logic"
+      ],
+      "answer": "Team Cherry",
+      "difficulty": "medium",
+      "category": "Indie"
+    },
+    {
+      "id": "175",
+      "question": "¿Qué estudio desarrolló Hades?",
+      "options": [
+        "Supergiant Games",
+        "Team Cherry",
+        "ConcernedApe",
+        "Motion Twin"
+      ],
+      "answer": "Supergiant Games",
+      "difficulty": "medium",
+      "category": "Indie"
+    },
+    {
+      "id": "176",
+      "question": "¿Qué estudio desarrolló Dead Cells?",
+      "options": [
+        "Motion Twin",
+        "Team Cherry",
+        "Subset Games",
+        "Klei"
+      ],
+      "answer": "Motion Twin",
+      "difficulty": "medium",
+      "category": "Indie"
+    },
+    {
+      "id": "177",
+      "question": "¿Qué juego indie fue desarrollado por ConcernedApe?",
+      "options": [
+        "Stardew Valley",
+        "Terraria",
+        "Hades",
+        "Undertale"
+      ],
+      "answer": "Stardew Valley",
+      "difficulty": "medium",
+      "category": "Indie"
+    },
+    {
+      "id": "178",
+      "question": "¿Qué estudio desarrolló Undertale?",
+      "options": [
+        "Toby Fox",
+        "Team Cherry",
+        "Playdead",
+        "Valve"
+      ],
+      "answer": "Toby Fox",
+      "difficulty": "medium",
+      "category": "Indie"
+    },
+    {
+      "id": "179",
+      "question": "¿Qué estudio desarrolló Limbo?",
+      "options": [
+        "Playdead",
+        "Supermassive Games",
+        "Remedy",
+        "Bloober Team"
+      ],
+      "answer": "Playdead",
+      "difficulty": "medium",
+      "category": "Indie"
+    },
+    {
+      "id": "180",
+      "question": "¿Qué estudio desarrolló Inside?",
+      "options": [
+        "Playdead",
+        "Team Cherry",
+        "Ninja Theory",
+        "Remedy"
+      ],
+      "answer": "Playdead",
+      "difficulty": "medium",
+      "category": "Indie"
+    },
+    {
+      "id": "181",
+      "question": "¿Qué juego de Supergiant fue lanzado antes de Hades y utiliza un narrador llamado Rucks?",
+      "options": [
+        "Bastion",
+        "Transistor",
+        "Pyre",
+        "Hades II"
+      ],
+      "answer": "Bastion",
+      "difficulty": "medium",
+      "category": "Indie"
+    },
+    {
+      "id": "182",
+      "question": "¿Qué juego de estrategia espacial fue creado por Subset Games?",
+      "options": [
+        "FTL: Faster Than Light",
+        "Into the Breach",
+        "Outer Wilds",
+        "Slay the Spire"
+      ],
+      "answer": "FTL: Faster Than Light",
+      "difficulty": "medium",
+      "category": "Indie"
+    },
+    {
+      "id": "183",
+      "question": "¿Qué juego de Subset Games permite controlar mechas contra Vek?",
+      "options": [
+        "Into the Breach",
+        "FTL",
+        "Hades",
+        "Risk of Rain 2"
+      ],
+      "answer": "Into the Breach",
+      "difficulty": "medium",
+      "category": "Indie"
+    },
+    {
+      "id": "184",
+      "question": "¿Qué es un roguelike?",
+      "options": [
+        "Género caracterizado por muerte permanente y elementos procedurales en su forma clásica",
+        "Un juego de carreras",
+        "Un simulador deportivo",
+        "Un juego exclusivamente multijugador"
+      ],
+      "answer": "Género caracterizado por muerte permanente y elementos procedurales en su forma clásica",
+      "difficulty": "medium",
+      "category": "Mechanics"
+    },
+    {
+      "id": "185",
+      "question": "¿Qué es una hitbox?",
+      "options": [
+        "Área usada para detectar colisiones o impactos",
+        "Un tipo de textura",
+        "Una pista de audio",
+        "Un archivo de guardado"
+      ],
+      "answer": "Área usada para detectar colisiones o impactos",
+      "difficulty": "medium",
+      "category": "Mechanics"
+    },
+    {
+      "id": "186",
+      "question": "¿Qué es input lag?",
+      "options": [
+        "Retraso entre una entrada del jugador y su respuesta en pantalla",
+        "Pérdida de FPS por temperatura",
+        "Tiempo de carga del mapa",
+        "Retraso del servidor exclusivamente"
+      ],
+      "answer": "Retraso entre una entrada del jugador y su respuesta en pantalla",
+      "difficulty": "medium",
+      "category": "Mechanics"
+    },
+    {
+      "id": "187",
+      "question": "¿Qué significa RNG?",
+      "options": [
+        "Random Number Generation",
+        "Rapid Network Gaming",
+        "Real Navigation Grid",
+        "Random Network Graphics"
+      ],
+      "answer": "Random Number Generation",
+      "difficulty": "medium",
+      "category": "Mechanics"
+    },
+    {
+      "id": "188",
+      "question": "¿Qué es un frame rate de 60 FPS?",
+      "options": [
+        "Aproximadamente 60 imágenes por segundo",
+        "60 minutos por sesión",
+        "60 jugadores simultáneos",
+        "60 GB de memoria"
+      ],
+      "answer": "Aproximadamente 60 imágenes por segundo",
+      "difficulty": "medium",
+      "category": "Mechanics"
+    },
+    {
+      "id": "189",
+      "question": "¿Qué es un parry?",
+      "options": [
+        "Técnica para desviar o contrarrestar un ataque",
+        "Una forma de curarse",
+        "Una carrera rápida",
+        "Una habilidad de inventario"
+      ],
+      "answer": "Técnica para desviar o contrarrestar un ataque",
+      "difficulty": "medium",
+      "category": "Mechanics"
+    },
+    {
+      "id": "190",
+      "question": "¿Qué es un iframe?",
+      "options": [
+        "Un intervalo durante el cual una entidad puede ser invulnerable",
+        "Un cuadro de diálogo",
+        "Una imagen del inventario",
+        "Un tipo de textura"
+      ],
+      "answer": "Un intervalo durante el cual una entidad puede ser invulnerable",
+      "difficulty": "medium",
+      "category": "Mechanics"
+    },
+    {
+      "id": "191",
+      "question": "¿Cuál fue el nombre de la primera consola de cartuchos doméstica comercialmente exitosa?",
+      "options": [
+        "Atari 2600",
+        "Magnavox Odyssey",
+        "ColecoVision",
+        "Intellivision"
+      ],
+      "answer": "Atari 2600",
+      "difficulty": "hard",
+      "category": "History"
+    },
+    {
+      "id": "192",
+      "question": "¿Qué consola fue originalmente conocida como Project Reality antes de su lanzamiento?",
+      "options": [
+        "Nintendo 64",
+        "GameCube",
+        "SNES",
+        "Virtual Boy"
+      ],
+      "answer": "Nintendo 64",
+      "difficulty": "hard",
+      "category": "History"
+    },
+    {
+      "id": "193",
+      "question": "¿Qué consola de Sega fue conocida internamente como Project Saturn?",
+      "options": [
+        "Sega Saturn",
+        "Dreamcast",
+        "Mega Drive",
+        "Game Gear"
+      ],
+      "answer": "Sega Saturn",
+      "difficulty": "hard",
+      "category": "History"
+    },
+    {
+      "id": "194",
+      "question": "¿Qué compañía publicó originalmente Tetris para Game Boy fuera de Japón?",
+      "options": [
+        "Nintendo",
+        "Atari",
+        "Sega",
+        "EA"
+      ],
+      "answer": "Nintendo",
+      "difficulty": "hard",
+      "category": "History"
+    },
+    {
+      "id": "195",
+      "question": "¿Qué compañía desarrolló System Shock original?",
+      "options": [
+        "Looking Glass Technologies",
+        "Origin Systems",
+        "id Software",
+        "Ion Storm"
+      ],
+      "answer": "Looking Glass Technologies",
+      "difficulty": "hard",
+      "category": "History"
+    },
+    {
+      "id": "196",
+      "question": "¿Qué compañía desarrolló Ultima VII?",
+      "options": [
+        "Origin Systems",
+        "Interplay",
+        "Westwood",
+        "Black Isle"
+      ],
+      "answer": "Origin Systems",
+      "difficulty": "hard",
+      "category": "History"
+    },
+    {
+      "id": "197",
+      "question": "¿Qué estudio creó Another World (Out of This World)?",
+      "options": [
+        "Delphine Software",
+        "Infogrames",
+        "Bullfrog",
+        "Core Design"
+      ],
+      "answer": "Delphine Software",
+      "difficulty": "hard",
+      "category": "History"
+    },
+    {
+      "id": "198",
+      "question": "¿Qué juego de 1980 fue uno de los primeros grandes éxitos de Atari en arcades?",
+      "options": [
+        "Asteroids",
+        "Centipede",
+        "Missile Command",
+        "Tempest"
+      ],
+      "answer": "Asteroids",
+      "difficulty": "hard",
+      "category": "History"
+    },
+    {
+      "id": "199",
+      "question": "¿Qué compañía desarrolló el arcade Street Fighter II?",
+      "options": [
+        "Capcom",
+        "SNK",
+        "Sega",
+        "Namco"
+      ],
+      "answer": "Capcom",
+      "difficulty": "hard",
+      "category": "History"
+    },
+    {
+      "id": "200",
+      "question": "¿Qué consola de Nintendo utilizó discos magnéticos regrabables en Japón antes del SNES?",
+      "options": [
+        "Famicom Disk System",
+        "Virtual Boy",
+        "GameCube",
+        "64DD"
+      ],
+      "answer": "Famicom Disk System",
+      "difficulty": "hard",
+      "category": "History"
+    },
+    {
+      "id": "201",
+      "question": "¿Qué personaje de Zelda es conocido como el Héroe del Tiempo?",
+      "options": [
+        "Link de Ocarina of Time",
+        "Link de Wind Waker",
+        "Link de Twilight Princess",
+        "Link de Skyward Sword"
+      ],
+      "answer": "Link de Ocarina of Time",
+      "difficulty": "hard",
+      "category": "Nintendo"
+    },
+    {
+      "id": "202",
+      "question": "¿Cuál es el nombre de la espada legendaria de Link?",
+      "options": [
+        "Master Sword",
+        "Four Sword",
+        "Biggoron Sword",
+        "Kokiri Sword"
+      ],
+      "answer": "Master Sword",
+      "difficulty": "hard",
+      "category": "Nintendo"
+    },
+    {
+      "id": "203",
+      "question": "¿Qué instrumento permite viajar en Ocarina of Time?",
+      "options": [
+        "Ocarina of Time",
+        "Flute of Time",
+        "Song Harp",
+        "Wind Baton"
+      ],
+      "answer": "Ocarina of Time",
+      "difficulty": "hard",
+      "category": "Nintendo"
+    },
+    {
+      "id": "204",
+      "question": "¿Qué entrega de Zelda fue originalmente lanzada para Nintendo 64?",
+      "options": [
+        "Majora's Mask",
+        "Twilight Princess",
+        "Wind Waker",
+        "Skyward Sword"
+      ],
+      "answer": "Majora's Mask",
+      "difficulty": "hard",
+      "category": "Nintendo"
+    },
+    {
+      "id": "205",
+      "question": "¿Qué personaje de Fire Emblem es conocido como Hero-King?",
+      "options": [
+        "Marth",
+        "Ike",
+        "Roy",
+        "Chrom"
+      ],
+      "answer": "Marth",
+      "difficulty": "hard",
+      "category": "Nintendo"
+    },
+    {
+      "id": "206",
+      "question": "¿Qué juego de Metroid introdujo por primera vez a Ridley como jefe?",
+      "options": [
+        "Metroid",
+        "Super Metroid",
+        "Metroid Prime",
+        "Metroid Fusion"
+      ],
+      "answer": "Metroid",
+      "difficulty": "hard",
+      "category": "Nintendo"
+    },
+    {
+      "id": "207",
+      "question": "¿Qué entrega de Pokémon introdujo las habilidades de los Pokémon?",
+      "options": [
+        "Pokémon Ruby y Sapphire",
+        "Pokémon Gold y Silver",
+        "Pokémon X y Y",
+        "Pokémon Red y Blue"
+      ],
+      "answer": "Pokémon Ruby y Sapphire",
+      "difficulty": "hard",
+      "category": "Nintendo"
+    },
+    {
+      "id": "208",
+      "question": "¿Qué consola tuvo un accesorio llamado 64DD?",
+      "options": [
+        "Nintendo 64",
+        "GameCube",
+        "NES",
+        "Wii"
+      ],
+      "answer": "Nintendo 64",
+      "difficulty": "hard",
+      "category": "Nintendo"
+    },
+    {
+      "id": "209",
+      "question": "¿Qué personaje de Star Fox pilota la Arwing?",
+      "options": [
+        "Fox McCloud",
+        "Falco Lombardi",
+        "Peppy Hare",
+        "Slippy Toad"
+      ],
+      "answer": "Fox McCloud",
+      "difficulty": "hard",
+      "category": "Nintendo"
+    },
+    {
+      "id": "210",
+      "question": "¿Qué serie de Nintendo tiene personajes como Captain Falcon y Blue Falcon?",
+      "options": [
+        "F-Zero",
+        "Star Fox",
+        "Wave Race",
+        "Pilotwings"
+      ],
+      "answer": "F-Zero",
+      "difficulty": "hard",
+      "category": "Nintendo"
+    },
+    {
+      "id": "211",
+      "question": "¿Qué compositor es especialmente asociado con la música de Final Fantasy VI y VII?",
+      "options": [
+        "Nobuo Uematsu",
+        "Yoko Shimomura",
+        "Koji Kondo",
+        "Motoi Sakuraba"
+      ],
+      "answer": "Nobuo Uematsu",
+      "difficulty": "hard",
+      "category": "RPG"
+    },
+    {
+      "id": "212",
+      "question": "¿Qué sistema de combate caracteriza a Chrono Trigger por permitir ataques combinados?",
+      "options": [
+        "Dual y Triple Techs",
+        "Materia",
+        "Junction",
+        "Gambits"
+      ],
+      "answer": "Dual y Triple Techs",
+      "difficulty": "hard",
+      "category": "RPG"
+    },
+    {
+      "id": "213",
+      "question": "¿Qué juego de Square fue conocido originalmente como Final Fantasy Versus XIII?",
+      "options": [
+        "Final Fantasy XV",
+        "Final Fantasy XIII-2",
+        "Final Fantasy XVI",
+        "Kingdom Hearts III"
+      ],
+      "answer": "Final Fantasy XV",
+      "difficulty": "hard",
+      "category": "RPG"
+    },
+    {
+      "id": "214",
+      "question": "¿Qué juego de Persona utiliza la ciudad de Inaba como escenario principal?",
+      "options": [
+        "Persona 4",
+        "Persona 3",
+        "Persona 5",
+        "Persona 2"
+      ],
+      "answer": "Persona 4",
+      "difficulty": "hard",
+      "category": "RPG"
+    },
+    {
+      "id": "215",
+      "question": "¿Qué juego de Persona se desarrolla principalmente en Tokio y tiene el café Leblanc?",
+      "options": [
+        "Persona 5",
+        "Persona 4",
+        "Persona 3",
+        "Persona 2"
+      ],
+      "answer": "Persona 5",
+      "difficulty": "hard",
+      "category": "RPG"
+    },
+    {
+      "id": "216",
+      "question": "¿Qué título de Dragon Quest es conocido por tener al héroe llamado The Luminary?",
+      "options": [
+        "Dragon Quest XI",
+        "Dragon Quest VIII",
+        "Dragon Quest V",
+        "Dragon Quest IX"
+      ],
+      "answer": "Dragon Quest XI",
+      "difficulty": "hard",
+      "category": "RPG"
+    },
+    {
+      "id": "217",
+      "question": "¿Qué juego de FromSoftware es una versión rehecha del título de 2009 para PS3?",
+      "options": [
+        "Demon's Souls",
+        "Dark Souls Remastered",
+        "Bloodborne",
+        "Sekiro"
+      ],
+      "answer": "Demon's Souls",
+      "difficulty": "hard",
+      "category": "RPG"
+    },
+    {
+      "id": "218",
+      "question": "¿Qué objeto de Bloodborne permite a los cazadores recuperar salud atacando rápidamente tras recibir daño?",
+      "options": [
+        "Sistema de rally",
+        "Estus Flask",
+        "Poise",
+        "Humanity"
+      ],
+      "answer": "Sistema de rally",
+      "difficulty": "hard",
+      "category": "RPG"
+    },
+    {
+      "id": "219",
+      "question": "¿Qué estadística de Dark Souls influye directamente en la capacidad de lanzar ciertos hechizos?",
+      "options": [
+        "Intelligence",
+        "Endurance",
+        "Vitality",
+        "Poise"
+      ],
+      "answer": "Intelligence",
+      "difficulty": "hard",
+      "category": "RPG"
+    },
+    {
+      "id": "220",
+      "question": "¿Qué tipo de magia utiliza Faith como atributo principal en Dark Souls?",
+      "options": [
+        "Milagros",
+        "Hechicerías",
+        "Piromancias",
+        "Artilugios"
+      ],
+      "answer": "Milagros",
+      "difficulty": "hard",
+      "category": "RPG"
+    },
+    {
+      "id": "221",
+      "question": "¿Qué juego de Metal Gear introduce el concepto de Tactical Espionage Action en su presentación?",
+      "options": [
+        "Metal Gear Solid",
+        "Metal Gear 2",
+        "Metal Gear Rising",
+        "Metal Gear Survive"
+      ],
+      "answer": "Metal Gear Solid",
+      "difficulty": "hard",
+      "category": "Action"
+    },
+    {
+      "id": "222",
+      "question": "¿Qué director está estrechamente asociado con Metal Gear y Death Stranding?",
+      "options": [
+        "Hideo Kojima",
+        "Shinji Mikami",
+        "Hideki Kamiya",
+        "Yoko Taro"
+      ],
+      "answer": "Hideo Kojima",
+      "difficulty": "hard",
+      "category": "Action"
+    },
+    {
+      "id": "223",
+      "question": "¿Qué estudio desarrolló Vanquish?",
+      "options": [
+        "PlatinumGames",
+        "Capcom",
+        "Sega",
+        "Konami"
+      ],
+      "answer": "PlatinumGames",
+      "difficulty": "hard",
+      "category": "Action"
+    },
+    {
+      "id": "224",
+      "question": "¿Qué juego de acción de Capcom utiliza Devil Breakers en combate?",
+      "options": [
+        "Devil May Cry 5",
+        "Dragon's Dogma",
+        "Resident Evil 6",
+        "Onimusha"
+      ],
+      "answer": "Devil May Cry 5",
+      "difficulty": "hard",
+      "category": "Action"
+    },
+    {
+      "id": "225",
+      "question": "¿Qué personaje de Devil May Cry es conocido como The Dark Slayer?",
+      "options": [
+        "Vergil",
+        "Dante",
+        "Nero",
+        "V"
+      ],
+      "answer": "Vergil",
+      "difficulty": "hard",
+      "category": "Action"
+    },
+    {
+      "id": "226",
+      "question": "¿Qué juego de Remedy tiene como protagonista a Jesse Faden?",
+      "options": [
+        "Control",
+        "Alan Wake",
+        "Quantum Break",
+        "Max Payne"
+      ],
+      "answer": "Control",
+      "difficulty": "hard",
+      "category": "Action"
+    },
+    {
+      "id": "227",
+      "question": "¿Qué juego de Remedy presenta a un escritor llamado Alan Wake?",
+      "options": [
+        "Alan Wake",
+        "Control",
+        "Quantum Break",
+        "Max Payne 2"
+      ],
+      "answer": "Alan Wake",
+      "difficulty": "hard",
+      "category": "Action"
+    },
+    {
+      "id": "228",
+      "question": "¿Qué estudio desarrolló Max Payne?",
+      "options": [
+        "Remedy Entertainment",
+        "Valve",
+        "Rockstar North",
+        "Naughty Dog"
+      ],
+      "answer": "Remedy Entertainment",
+      "difficulty": "hard",
+      "category": "Action"
+    },
+    {
+      "id": "229",
+      "question": "¿Qué juego de acción presenta el sistema Nemesis?",
+      "options": [
+        "Middle-earth: Shadow of Mordor",
+        "Dishonored",
+        "Assassin's Creed II",
+        "Dragon Age"
+      ],
+      "answer": "Middle-earth: Shadow of Mordor",
+      "difficulty": "hard",
+      "category": "Action"
+    },
+    {
+      "id": "230",
+      "question": "¿Qué estudio desarrolló Shadow of Mordor?",
+      "options": [
+        "Monolith Productions",
+        "Rocksteady",
+        "Bungie",
+        "Obsidian"
+      ],
+      "answer": "Monolith Productions",
+      "difficulty": "hard",
+      "category": "Action"
+    },
+    {
+      "id": "231",
+      "question": "¿Qué director dirigió Resident Evil 1 y posteriormente creó The Evil Within?",
+      "options": [
+        "Shinji Mikami",
+        "Hideo Kojima",
+        "Keiichiro Toyama",
+        "Hideki Kamiya"
+      ],
+      "answer": "Shinji Mikami",
+      "difficulty": "hard",
+      "category": "Horror"
+    },
+    {
+      "id": "232",
+      "question": "¿Qué estudio desarrolló The Evil Within?",
+      "options": [
+        "Tango Gameworks",
+        "PlatinumGames",
+        "Capcom",
+        "FromSoftware"
+      ],
+      "answer": "Tango Gameworks",
+      "difficulty": "hard",
+      "category": "Horror"
+    },
+    {
+      "id": "233",
+      "question": "¿Qué juego de terror de Frictional Games tiene al protagonista Daniel?",
+      "options": [
+        "Amnesia: The Dark Descent",
+        "Soma",
+        "Penumbra",
+        "Amnesia: Rebirth"
+      ],
+      "answer": "Amnesia: The Dark Descent",
+      "difficulty": "hard",
+      "category": "Horror"
+    },
+    {
+      "id": "234",
+      "question": "¿Qué juego de Frictional Games explora temas de identidad y conciencia bajo el océano?",
+      "options": [
+        "SOMA",
+        "Amnesia",
+        "Penumbra",
+        "The Bunker"
+      ],
+      "answer": "SOMA",
+      "difficulty": "hard",
+      "category": "Horror"
+    },
+    {
+      "id": "235",
+      "question": "¿Qué director estuvo detrás de Silent Hill y posteriormente de Gravity Rush?",
+      "options": [
+        "Keiichiro Toyama",
+        "Masahiro Ito",
+        "Hideo Kojima",
+        "Shinji Mikami"
+      ],
+      "answer": "Keiichiro Toyama",
+      "difficulty": "hard",
+      "category": "Horror"
+    },
+    {
+      "id": "236",
+      "question": "¿Qué artista es especialmente conocido por el diseño de Pyramid Head?",
+      "options": [
+        "Masahiro Ito",
+        "Tetsuya Nomura",
+        "Yoji Shinkawa",
+        "Takayuki Harada"
+      ],
+      "answer": "Masahiro Ito",
+      "difficulty": "hard",
+      "category": "Horror"
+    },
+    {
+      "id": "237",
+      "question": "¿Qué videojuego de terror de 1992 es considerado un precursor importante del survival horror moderno?",
+      "options": [
+        "Alone in the Dark",
+        "Resident Evil",
+        "Silent Hill",
+        "Clock Tower"
+      ],
+      "answer": "Alone in the Dark",
+      "difficulty": "hard",
+      "category": "Horror"
+    },
+    {
+      "id": "238",
+      "question": "¿Qué juego utiliza la estación espacial Talos I como escenario?",
+      "options": [
+        "Prey (2017)",
+        "Dead Space",
+        "System Shock 2",
+        "Alien: Isolation"
+      ],
+      "answer": "Prey (2017)",
+      "difficulty": "hard",
+      "category": "Horror"
+    },
+    {
+      "id": "239",
+      "question": "¿Qué empresa desarrolló Alien: Isolation?",
+      "options": [
+        "Creative Assembly",
+        "The Creative Assembly no es correcto",
+        "Feral Interactive",
+        "Sega Japan"
+      ],
+      "answer": "Creative Assembly",
+      "difficulty": "hard",
+      "category": "Horror"
+    },
+    {
+      "id": "240",
+      "question": "¿Qué juego de Valve fue creado originalmente como mod de Half-Life?",
+      "options": [
+        "Counter-Strike",
+        "Portal",
+        "Left 4 Dead",
+        "Dota 2"
+      ],
+      "answer": "Counter-Strike",
+      "difficulty": "hard",
+      "category": "PC"
+    },
+    {
+      "id": "241",
+      "question": "¿Qué juego dio origen a Dota como mod de Warcraft III?",
+      "options": [
+        "Defense of the Ancients",
+        "Aeon of Strife",
+        "StarCraft",
+        "Heroes of Newerth"
+      ],
+      "answer": "Defense of the Ancients",
+      "difficulty": "hard",
+      "category": "PC"
+    },
+    {
+      "id": "242",
+      "question": "¿Qué juego de Blizzard fue construido como sucesor de Warcraft III en el género RTS?",
+      "options": [
+        "StarCraft II",
+        "Diablo III",
+        "Overwatch",
+        "Heroes of the Storm"
+      ],
+      "answer": "StarCraft II",
+      "difficulty": "hard",
+      "category": "PC"
+    },
+    {
+      "id": "243",
+      "question": "¿Qué motor utilizó Quake III Arena?",
+      "options": [
+        "id Tech 3",
+        "id Tech 2",
+        "Source",
+        "Unreal Engine 2"
+      ],
+      "answer": "id Tech 3",
+      "difficulty": "hard",
+      "category": "PC"
+    },
+    {
+      "id": "244",
+      "question": "¿Qué API gráfica fue creada por Microsoft y es común en juegos de Windows?",
+      "options": [
+        "DirectX",
+        "Vulkan",
+        "OpenGL",
+        "Metal"
+      ],
+      "answer": "DirectX",
+      "difficulty": "hard",
+      "category": "PC"
+    },
+    {
+      "id": "245",
+      "question": "¿Qué API gráfica multiplataforma es mantenida por Khronos Group?",
+      "options": [
+        "Vulkan",
+        "DirectX",
+        "Metal",
+        "GameMaker"
+      ],
+      "answer": "Vulkan",
+      "difficulty": "hard",
+      "category": "PC"
+    },
+    {
+      "id": "246",
+      "question": "¿Qué compañía creó el motor Frostbite?",
+      "options": [
+        "DICE",
+        "Crytek",
+        "Epic Games",
+        "Valve"
+      ],
+      "answer": "DICE",
+      "difficulty": "hard",
+      "category": "PC"
+    },
+    {
+      "id": "247",
+      "question": "¿Qué juego fue desarrollado por Crytek y popularizó el uso del CryEngine?",
+      "options": [
+        "Far Cry",
+        "Crysis",
+        "Ryse: Son of Rome",
+        "Hunt: Showdown"
+      ],
+      "answer": "Far Cry",
+      "difficulty": "hard",
+      "category": "PC"
+    },
+    {
+      "id": "248",
+      "question": "¿Qué estudio desarrolló Deus Ex original?",
+      "options": [
+        "Ion Storm",
+        "Looking Glass",
+        "Eidos Montreal",
+        "Arkane"
+      ],
+      "answer": "Ion Storm",
+      "difficulty": "hard",
+      "category": "PC"
+    },
+    {
+      "id": "249",
+      "question": "¿Qué juego de Valve tiene al personaje Gordon Freeman?",
+      "options": [
+        "Half-Life",
+        "Portal",
+        "Left 4 Dead",
+        "Dota 2"
+      ],
+      "answer": "Half-Life",
+      "difficulty": "hard",
+      "category": "PC"
+    },
+    {
+      "id": "250",
+      "question": "¿Qué compositor creó gran parte de la música de The Legend of Zelda y Super Mario?",
+      "options": [
+        "Koji Kondo",
+        "Nobuo Uematsu",
+        "Jeremy Soule",
+        "Martin O'Donnell"
+      ],
+      "answer": "Koji Kondo",
+      "difficulty": "hard",
+      "category": "Misc"
     }
   ],
   "scores": [
     {
-      "player": "Eiker",
-      "score": 800,
-      "correctAnswers": 8,
-      "totalQuestions": 8,
-      "percentage": 100,
-      "level": "medium",
-      "date": "2026-09-21T16:31:37.600Z",
-      "id": "7iX7E4pv6Vg"
+      "player": "TestPlayer",
+      "score": 100,
+      "correctAnswers": 1,
+      "totalQuestions": 10,
+      "percentage": 10,
+      "difficulty": "easy",
+      "level": "easy",
+      "date": "2026-09-21T00:00:00.000Z",
+      "id": "GKBjY8SE7hQ"
+    },
+    {
+      "player": "Andres",
+      "score": 2000,
+      "correctAnswers": 10,
+      "totalQuestions": 15,
+      "percentage": 67,
+      "difficulty": "hard",
+      "level": "hard",
+      "date": "2026-09-21T19:45:06.062Z",
+      "id": "AcvlAt7zE74"
+    },
+    {
+      "player": "hola",
+      "score": 0,
+      "correctAnswers": 0,
+      "totalQuestions": 10,
+      "percentage": 0,
+      "difficulty": "easy",
+      "level": "easy",
+      "date": "2026-09-21T19:54:45.024Z",
+      "id": "kjjYYgBHAVQ"
+    },
+    {
+      "player": "hola",
+      "score": 100,
+      "correctAnswers": 1,
+      "totalQuestions": 10,
+      "percentage": 10,
+      "difficulty": "easy",
+      "level": "easy",
+      "date": "2026-09-21T19:58:42.096Z",
+      "id": "EHM_PkOJSHo"
+    },
+    {
+      "player": "alanie",
+      "score": 1800,
+      "correctAnswers": 9,
+      "totalQuestions": 15,
+      "percentage": 60,
+      "difficulty": "hard",
+      "level": "hard",
+      "date": "2026-09-21T20:02:03.492Z",
+      "id": "F7qlRCGLxOs"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
