@@ -1,1 +1,277 @@
-{}
+{
+  "questions": [
+    {
+      "id": "1",
+      "question": "¿Cuál de estos juegos fue desarrollado por FromSoftware?",
+      "category": "RPG",
+      "difficulty": "easy",
+      "options": [
+        "Bloodborne",
+        "Resident Evil 4",
+        "Silent Hill 2",
+        "Dead Space"
+      ],
+      "correctAnswer": "Bloodborne"
+    },
+    {
+      "id": "2",
+      "question": "¿Cuál es el nombre del protagonista de Death Stranding?",
+      "category": "Acción",
+      "difficulty": "easy",
+      "options": [
+        "Sam Porter Bridges",
+        "Leon S. Kennedy",
+        "Isaac Clarke",
+        "James Sunderland"
+      ],
+      "correctAnswer": "Sam Porter Bridges"
+    },
+    {
+      "id": "3",
+      "question": "¿Qué compañía desarrolló Resident Evil?",
+      "category": "Survival Horror",
+      "difficulty": "easy",
+      "options": [
+        "Capcom",
+        "Konami",
+        "FromSoftware",
+        "Valve"
+      ],
+      "correctAnswer": "Capcom"
+    },
+    {
+      "id": "4",
+      "question": "¿Cuál de estos juegos pertenece a la saga Silent Hill?",
+      "category": "Survival Horror",
+      "difficulty": "easy",
+      "options": [
+        "Silent Hill 2",
+        "The Evil Within",
+        "Outlast",
+        "Amnesia"
+      ],
+      "correctAnswer": "Silent Hill 2"
+    },
+    {
+      "id": "5",
+      "question": "¿Quién es el protagonista principal de Resident Evil 4?",
+      "category": "Survival Horror",
+      "difficulty": "medium",
+      "options": [
+        "Leon S. Kennedy",
+        "Chris Redfield",
+        "Ethan Winters",
+        "Jill Valentine"
+      ],
+      "correctAnswer": "Leon S. Kennedy"
+    },
+    {
+      "id": "6",
+      "question": "¿Cuál de estos juegos fue creado por Hideo Kojima?",
+      "category": "Acción",
+      "difficulty": "medium",
+      "options": [
+        "Death Stranding",
+        "Bloodborne",
+        "Dark Souls",
+        "Resident Evil"
+      ],
+      "correctAnswer": "Death Stranding"
+    },
+    {
+      "id": "7",
+      "question": "¿Qué juego presenta al personaje Pyramid Head?",
+      "category": "Survival Horror",
+      "difficulty": "medium",
+      "options": [
+        "Silent Hill 2",
+        "Resident Evil 2",
+        "Dead Space",
+        "Outlast"
+      ],
+      "correctAnswer": "Silent Hill 2"
+    },
+    {
+      "id": "8",
+      "question": "¿Cuál es el nombre del protagonista de SIGNALIS?",
+      "category": "Survival Horror",
+      "difficulty": "medium",
+      "options": [
+        "Elster",
+        "Isaac",
+        "James",
+        "Heather"
+      ],
+      "correctAnswer": "Elster"
+    },
+    {
+      "id": "9",
+      "question": "¿Cuál de estos juegos pertenece a la serie Dark Souls?",
+      "category": "RPG",
+      "difficulty": "easy",
+      "options": [
+        "Dark Souls III",
+        "Sekiro",
+        "Bloodborne",
+        "Elden Ring"
+      ],
+      "correctAnswer": "Dark Souls III"
+    },
+    {
+      "id": "10",
+      "question": "¿Qué estudio desarrolló Hollow Knight?",
+      "category": "Metroidvania",
+      "difficulty": "medium",
+      "options": [
+        "Team Cherry",
+        "Valve",
+        "Naughty Dog",
+        "Capcom"
+      ],
+      "correctAnswer": "Team Cherry"
+    },
+    {
+      "id": "11",
+      "question": "¿Cuál de estos juegos fue desarrollado por CD Projekt Red?",
+      "category": "RPG",
+      "difficulty": "easy",
+      "options": [
+        "Cyberpunk 2077",
+        "Elden Ring",
+        "Death Stranding",
+        "Control"
+      ],
+      "correctAnswer": "Cyberpunk 2077"
+    },
+    {
+      "id": "12",
+      "question": "¿Cuál es el nombre del protagonista de Silent Hill 2?",
+      "category": "Survival Horror",
+      "difficulty": "medium",
+      "options": [
+        "James Sunderland",
+        "Harry Mason",
+        "Henry Townshend",
+        "Alex Shepherd"
+      ],
+      "correctAnswer": "James Sunderland"
+    },
+    {
+      "id": "13",
+      "question": "¿Cuál de estos juegos pertenece al género roguelike?",
+      "category": "Indie",
+      "difficulty": "medium",
+      "options": [
+        "Hades",
+        "Resident Evil 4",
+        "Silent Hill 2",
+        "Death Stranding"
+      ],
+      "correctAnswer": "Hades"
+    },
+    {
+      "id": "14",
+      "question": "¿Qué juego tiene como protagonista a Zagreus?",
+      "category": "Indie",
+      "difficulty": "easy",
+      "options": [
+        "Hades",
+        "Hollow Knight",
+        "Celeste",
+        "Dead Cells"
+      ],
+      "correctAnswer": "Hades"
+    },
+    {
+      "id": "15",
+      "question": "¿Cuál de estos juegos fue desarrollado por Remedy Entertainment?",
+      "category": "Acción",
+      "difficulty": "hard",
+      "options": [
+        "Control",
+        "Bloodborne",
+        "Sekiro",
+        "Resident Evil 7"
+      ],
+      "correctAnswer": "Control"
+    },
+    {
+      "id": "16",
+      "question": "¿Qué personaje es protagonista de Metal Gear Solid?",
+      "category": "Acción",
+      "difficulty": "hard",
+      "options": [
+        "Solid Snake",
+        "Dante",
+        "Vergil",
+        "Jin Kazama"
+      ],
+      "correctAnswer": "Solid Snake"
+    },
+    {
+      "id": "17",
+      "question": "¿Cuál de estos juegos fue desarrollado por FromSoftware y publicado en 2022?",
+      "category": "RPG",
+      "difficulty": "hard",
+      "options": [
+        "Elden Ring",
+        "Bloodborne",
+        "Dark Souls III",
+        "Sekiro"
+      ],
+      "correctAnswer": "Elden Ring"
+    },
+    {
+      "id": "18",
+      "question": "¿Cuál es el nombre de la protagonista de Bayonetta?",
+      "category": "Acción",
+      "difficulty": "hard",
+      "options": [
+        "Bayonetta",
+        "2B",
+        "Jill",
+        "Ada"
+      ],
+      "correctAnswer": "Bayonetta"
+    },
+    {
+      "id": "19",
+      "question": "¿Qué juego tiene como protagonista a 2B?",
+      "category": "RPG",
+      "difficulty": "medium",
+      "options": [
+        "NieR:Automata",
+        "Bayonetta",
+        "Control",
+        "Signalis"
+      ],
+      "correctAnswer": "NieR:Automata"
+    },
+    {
+      "id": "20",
+      "question": "¿Cuál de estos juegos fue desarrollado por Team Silent?",
+      "category": "Survival Horror",
+      "difficulty": "hard",
+      "options": [
+        "Silent Hill 2",
+        "Resident Evil 2",
+        "Dead Space",
+        "Fatal Frame"
+      ],
+      "correctAnswer": "Silent Hill 2"
+    }
+  ],
+  "scores": [
+    {
+      "player": "Eiker",
+      "score": 800,
+      "correctAnswers": 8,
+      "totalQuestions": 8,
+      "percentage": 100,
+      "level": "medium",
+      "date": "2026-09-21T16:31:37.600Z",
+      "id": "7iX7E4pv6Vg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
